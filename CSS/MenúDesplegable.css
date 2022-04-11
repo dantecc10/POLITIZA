@@ -1,0 +1,46 @@
+.Menú-Desplegable
+{
+    position: right;
+    
+    display: inline-block;
+    ;
+}
+.Botón-Desplegar
+{
+    background-color: rgba(255,255,255,1);
+    color: #07A189;
+    padding: 16px;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.Contenido-Desplegable
+{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.Contenido-Desplegable a 
+{
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.Contenido-Desplegable a:hover
+{
+  background-color: #f1f1f1
+}
+/* Show the dropdown menu on hover */
+.Menú-Desplegable:hover .Contenido-Desplegable
+{
+  display: block;
+}
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn
+{
+  background-color: #d3703b83;
+}
