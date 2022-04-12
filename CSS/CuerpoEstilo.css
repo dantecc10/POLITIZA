@@ -1,6 +1,7 @@
 div#OrganizadorLayout
 {
-    display: inline;
+    position: absolute;
+    display: inline-flex;
 }
 div#Contenedor-Artículos
 {
@@ -11,7 +12,7 @@ div#Contenedor-Artículos
 }
 div#Descripción-Lateral
 {
-    width: 50%;
+    width: 20%;;
 }
 div h3 a.TítuloArtículo
 {
