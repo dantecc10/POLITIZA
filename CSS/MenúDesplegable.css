@@ -5,12 +5,15 @@
 }  
 .Botón-Desplegar
 {
+  font-weight: bold;
+  box-shadow: #07A189;
   background-color: #07A189;
   color: #2F2F35;
   padding: 16px;
   font-size: 20px;
   border-radius: 20px;
   cursor: pointer;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .Contenido-Desplegable
 {

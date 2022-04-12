@@ -55,3 +55,10 @@ img#Logo
     justify-content: left;
     margin-right: 850px;
 }
+#Logo:hover
+{
+    width: 135px;
+    height: 135px;
+    justify-content: left;
+    margin-right: 850px;
+}
