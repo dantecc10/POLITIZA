@@ -40,6 +40,7 @@ div h4.Autor-Artículo
 }
 div p.Descripción-Artículo
 {
+    font-weight: bolder;
     margin-top: -15px;
     color: #051229;
     font-size: 20px;
