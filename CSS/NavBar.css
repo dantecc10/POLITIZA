@@ -1,6 +1,4 @@
-@media screen {
-    
-}
+
 body
 {
     background-color: #162244;
@@ -8,19 +6,22 @@ body
 }
 h1
 {
-    border-radius: 15px;
+    border-radius: 22px;
     background-color: #1622448d;
     color: #07b89e;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 50px;
+    font-size: 40px;
+    text-align: center;
     margin-right: 90px;
-    margin-left: -200px;
+    margin-left: -100px;
 }
 h1:hover
 {
     font-size: 60px;
-    margin-right: 50px;
-    margin-left: -220px;
+    text-align: center;
+    margin-right: 52px;
+    margin-left: -140px;
+    alt: "Por Dante Castelán Carpinteyro";
 }
 #Encabezado
 {
@@ -55,14 +56,12 @@ img#Logo
 {
     width: 115px;
     height: 115px;
-    justify-content: left;
-    margin-right: 850px;
+    margin-right: 630px;
 }
 #Logo:hover
 {
     width: 135px;
     height: 135px;
-    justify-content: left;
-    margin-right: 840px;
+    margin-right: 620px;
     margin-left: -10px;
 }

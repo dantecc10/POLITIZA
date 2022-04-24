@@ -1,32 +1,51 @@
-div#OrganizadorLayout
+h2#IndicaArtículos
 {
-    position: absolute;
-    display: inline-flex;
+    color: #07A189;
+    text-align: justify;
+    font-size: 25px;
+    background-color: #0C37E832;
+    padding: 5px;
+    text-indent: 50px;
 }
 div#Contenedor-Artículos
 {
+    margin-top: -20px;
     margin-left: 50px;
     margin-right: 50px;
     width: 50%;
-
+    overflow-y: auto;
+    overflow-x: auto;
+    height: 600px;
 }
-div#Descripción-Lateral
-{
-    width: 20%;;
-}
-div h3 a.TítuloArtículo
+div h3 .TítuloArtículo
 {
     color: #07A189;
+    text-align: justify;
     font-size: 25px;
+    background-color: #0C37E832;
+    padding: 5px;
+    padding-left: 20px;
+    border-radius: 10px;
 }
 div h4.Autor-Artículo
 {
+    margin-top: -2px;
+    text-indent: 40px;
     color: #0C37E8;
+    text-align: right;
     font-size: 20px;
+    background-color: #0C37E832;
+    padding: 5px;
+    border-radius: 10px;
 }
 div p.Descripción-Artículo
 {
+    margin-top: -15px;
     color: #051229;
     font-size: 20px;
     text-align: justify;
+    background-color: #07a18a32;
+    border-radius: 25px;
+    text-indent: 20px;
+    padding: 10px;
 }
