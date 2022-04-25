@@ -52,16 +52,16 @@ h1:hover
     align-items: center;
     justify-content:left;
 }
-img#Logo
-{
-    width: 115px;
-    height: 115px;
-    margin-right: 630px;
-}
-#Logo:hover
+img#Logo:hover
 {
     width: 135px;
     height: 135px;
     margin-right: 620px;
     margin-left: -10px;
+}
+img#Logo
+{
+    width: 115px;
+    height: 115px;
+    margin-right: 630px;
 }
