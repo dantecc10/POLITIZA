@@ -10,14 +10,14 @@ h2#IndicaArtículos
 div#Contenedor-Artículos
 {
     margin-top: -20px;
-    margin-left: 50px;
-    margin-right: 50px;
-    width: 50%;
+    width: 90%;
     overflow-y: auto;
     overflow-x: auto;
     height: 600px;
+    padding-left: 5%;
+    padding-right: 5%;
 }
-div h3 .TítuloArtículo
+/*div h3 .TítuloArtículo
 {
     color: #07A189;
     text-align: justify;
@@ -26,6 +26,15 @@ div h3 .TítuloArtículo
     padding: 5px;
     padding-left: 20px;
     border-radius: 10px;
+}*/
+h3.TítuloArtículo, .TítuloArtículo#ContactoCorreo
+{
+    color: #07A189;
+    text-align: center;
+    font-size: 25px;
+    background-color: #0C37E832;
+    padding: 5px;
+    border-radius: 15px;
 }
 div h4.Autor-Artículo
 {
@@ -41,14 +50,16 @@ div h4.Autor-Artículo
 div p.Descripción-Artículo
 {
     font-weight: 200;
-    margin-top: -15px;
     color: whitesmoke;
     font-size: 20px;
     text-align: justify;
     background-color: #07a18a5f;
     border-radius: 25px;
     text-indent: 20px;
-    padding: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 /*Redes sociales*/
@@ -60,29 +71,52 @@ input.RedSocial
 }
 input.RedSocial#Facebook:hover
 {
-
+    width: 50px;
+    height: 50px;
+    margin: 2.5px
 }
 input.RedSocial#WhatsApp:hover
 {
-    
+    width: 50px;
+    height: 50px;
+    margin: 2.5px
 }
 input.RedSocial#Messenger:hover
 {
-    
+    width: 50px;
+    height: 50px;
+    margin: 2.5px
 }
 input.RedSocial#YouTube:hover
 {
-    
+    width: 50px;
+    height: 50px;
+    margin: 2.5px
 }
 input.RedSocial#Telegram:hover
 {
-    
+    width: 50px;
+    height: 50px;
+    margin: 2.5px
 }
 input.RedSocial#Twitter:hover
 {
-    
+    width: 50px;
+    height: 50px;
+    margin: 2.5px
 }
 input.RedSocial#GitHub:hover
 {
-    
+    width: 50px;
+    height: 50px;
+    margin: 2.5px
+}
+hr
+{
+    width: 75%;
+    background-color: #041029;
+    height: 5px;
+    border-color: #07A189;
+    border-radius: 5px;
+    color: #041029;
 }
