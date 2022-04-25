@@ -40,12 +40,12 @@ div h4.Autor-Artículo
 }
 div p.Descripción-Artículo
 {
-    font-weight: bolder;
+    font-weight: 200;
     margin-top: -15px;
-    color: #051229;
+    color: whitesmoke;
     font-size: 20px;
     text-align: justify;
-    background-color: #07a18a32;
+    background-color: #07a18a5f;
     border-radius: 25px;
     text-indent: 20px;
     padding: 10px;
