@@ -50,10 +50,39 @@ div p.Descripción-Artículo
     text-indent: 20px;
     padding: 10px;
 }
-/*
+
+/*Redes sociales*/
 input.RedSocial
 {
     width: 45px;
     height: 45px;
+    margin: 5px;
 }
-*/
+input.RedSocial#Facebook:hover
+{
+
+}
+input.RedSocial#WhatsApp:hover
+{
+    
+}
+input.RedSocial#Messenger:hover
+{
+    
+}
+input.RedSocial#YouTube:hover
+{
+    
+}
+input.RedSocial#Telegram:hover
+{
+    
+}
+input.RedSocial#Twitter:hover
+{
+    
+}
+input.RedSocial#GitHub:hover
+{
+    
+}
