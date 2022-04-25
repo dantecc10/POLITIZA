@@ -13,7 +13,7 @@ div#Contenedor-Artículos
     width: 90%;
     overflow-y: auto;
     overflow-x: auto;
-    height: 600px;
+    height: 300px;
     padding-left: 5%;
     padding-right: 5%;
 }
@@ -61,7 +61,10 @@ div p.Descripción-Artículo
     padding-left: 20px;
     padding-right: 20px;
 }
-
+div#RedesSociales
+{
+    align-items: center;
+}
 /*Redes sociales*/
 input.RedSocial
 {
