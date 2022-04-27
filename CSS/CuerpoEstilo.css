@@ -39,13 +39,14 @@ h3.TítuloArtículo, .TítuloArtículo#ContactoCorreo
 div h4.Autor-Artículo
 {
     margin-top: -2px;
-    text-indent: 40px;
     color: #0C37E8;
     text-align: right;
     font-size: 20px;
     background-color: #0C37E832;
     padding: 5px;
+    padding-right: 100px;
     border-radius: 10px;
+
 }
 div p.Descripción-Artículo
 {
@@ -66,49 +67,49 @@ div#RedesSociales
     align-items: center;
 }
 /*Redes sociales*/
-input.RedSocial
+img.RedSocial
 {
     width: 45px;
     height: 45px;
     margin: 5px;
 }
-input.RedSocial#Facebook:hover
+img.RedSocial#Facebook:hover
 {
     width: 50px;
     height: 50px;
     margin: 2.5px
 }
-input.RedSocial#WhatsApp:hover
+img.RedSocial#WhatsApp:hover
 {
     width: 50px;
     height: 50px;
     margin: 2.5px
 }
-input.RedSocial#Messenger:hover
+img.RedSocial#Messenger:hover
 {
     width: 50px;
     height: 50px;
     margin: 2.5px
 }
-input.RedSocial#YouTube:hover
+img.RedSocial#YouTube:hover
 {
     width: 50px;
     height: 50px;
     margin: 2.5px
 }
-input.RedSocial#Telegram:hover
+img.RedSocial#Telegram:hover
 {
     width: 50px;
     height: 50px;
     margin: 2.5px
 }
-input.RedSocial#Twitter:hover
+img.RedSocial#Twitter:hover
 {
     width: 50px;
     height: 50px;
     margin: 2.5px
 }
-input.RedSocial#GitHub:hover
+img.RedSocial#GitHub:hover
 {
     width: 50px;
     height: 50px;
