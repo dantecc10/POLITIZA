@@ -7,13 +7,20 @@ h2#IndicaArtículos
     padding: 5px;
     text-indent: 50px;
 }
-div#Contenedor-Artículos
+div.Contenedor-Artículos.Limitado
 {
     margin-top: -20px;
     width: 90%;
     overflow-y: auto;
     overflow-x: auto;
     height: 300px;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+div.Contenedor-Artículos#PartidosPolíticos
+{
+    margin-top: 20px;
+    width: 90%;
     padding-left: 5%;
     padding-right: 5%;
 }
@@ -36,19 +43,46 @@ h3.TítuloArtículo, .TítuloArtículo#ContactoCorreo
     padding: 5px;
     border-radius: 15px;
 }
-div h4.Autor-Artículo
+h4.TítuloArtículo
+{
+    color: #07A189;
+    text-align: center;
+    font-size: 25px;
+    background-color: #0C37E832;
+    padding: 5px;
+    border-radius: 15px;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+div h4.Autor-Artículo, div p.Autor-Artículo
 {
     margin-top: -2px;
     color: #0C37E8;
-    text-align: right;
+    text-align: center;
     font-size: 20px;
     background-color: #0C37E832;
     padding: 5px;
-    padding-right: 100px;
     border-radius: 10px;
+    margin-left: 50%;
 
 }
-div p.Descripción-Artículo
+div li.ElementoDeLista
+{
+    font-weight: 200;
+    color: whitesmoke;
+    font-size: 20px;
+    text-align: justify;
+    border-radius: 25px;
+    text-indent: 20px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    margin-left: 40px;
+    padding-right: 20px;
+}
+div .Descripción-Artículo
 {
     font-weight: 200;
     color: whitesmoke;
@@ -62,10 +96,41 @@ div p.Descripción-Artículo
     padding-left: 20px;
     padding-right: 20px;
 }
+div img.LogoPartidista
+{
+    height:"100px";
+    width: "100px";
+    border-radius: 25px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+
+
+
+
+
+
+
+
+
+
 div#RedesSociales
 {
     align-items: center;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*Redes sociales*/
 img.RedSocial
 {
