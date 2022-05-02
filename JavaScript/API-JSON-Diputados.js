@@ -14,8 +14,26 @@ const url_general = "https://raw.githubusercontent.com/dantecc10/API-POLITIZA/ma
 fetch(url).then(function(respuesta)
 {
     return respuesta.json();
-}).then(function(datos)
+}).then(function(datos){
 {
+    //Modificar el HTML
+    for (let i = 0; i < json.length; i++)
+    {
+        json[i]["nombre"]
+
+        for(let j=0; j<json[i]["albums"].length; j++)
+        {
+            json[i]["albums"][j]["nombre"]
+            json[i]["albums"][j]["imagen"]
+        }
+    }
+    json[0]["albums"][1]["imagen"]
+
+
+
+    datos[1][""]
+}
+/*
     console.log(datos);
     for (let i = 0; i < datos.length; i++)
     {
@@ -26,3 +44,5 @@ fetch(url).then(function(respuesta)
         console.log(error);
     });
 
+
+*/
