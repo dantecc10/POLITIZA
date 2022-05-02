@@ -66,8 +66,6 @@ div h4.Autor-Artículo, div p.Autor-Artículo
     background-color: #0C37E832;
     padding: 5px;
     border-radius: 10px;
-    margin-left: 50%;
-
 }
 div li.ElementoDeLista
 {
@@ -95,6 +93,8 @@ div .Descripción-Artículo
     padding-bottom: 15px;
     padding-left: 20px;
     padding-right: 20px;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 div img.LogoPartidista
 {
