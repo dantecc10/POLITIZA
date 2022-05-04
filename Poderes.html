@@ -24,17 +24,17 @@
                     <img id="Logo" src="IMG/FAVICON.PNG" alt="Logo POLITIZA MX">
                 </a>
                 <div class="Menú-Desplegable">
-                        <button class="Botón-Desplegar">Menú</button>
-                        <div class="Contenido-Desplegable">
-                            <a href="SignificadoPolítica" target="_blank">¿Qué es la política?</a>
-                            <a href="ConceptosPolítica.html" target="_blank">Conceptos políticos</a>
-                            <a href="Opinión.html" target="_blank">Artículos de opinión</a>
-                            <a href="Poderes.html" target="_blank">División de poderes</a>
-                            <a href="Partidos.html" target="_blank">Partidos políticos</a>
-                            <a href="Presidenciables.html" target="_blank">Presidenciables 2024</a>
-                            <a href="AcercaDe.html" target="_blank">Acerca de...</a>
-                        </div>
+                    <button class="Botón-Desplegar">Menú</button>
+                    <div class="Contenido-Desplegable">
+                        <a href="SignificadoPolítica.html">¿Qué es la política?</a>
+                        <a href="ConceptosPolítica.html">Conceptos políticos</a>
+                        <a href="Opinión.html">Artículos de opinión</a>
+                        <a href="Poderes.html">División de poderes</a>
+                        <a href="Partidos.html">Partidos políticos</a>
+                        <a href="Presidenciables.html">Presidenciables 2024</a>
+                        <a href="AcercaDe.html">Acerca de...</a>
                     </div>
+                </div>
             </div>
         </div>
         <div id="Encabezado-Superior"></div>
@@ -53,18 +53,92 @@
             <li class="ElementoDeLista">Legislativo: Es básicamente el Congreso y está dividido, a su vez, en dos órganos legislativos: la Cámara de Diputados y la de senadores.</li>
             <li class="ElementoDeLista">Judicial: El poder judicial es el encargado de vigilar el cumplimiento de la Constitución Política de los Estados Unidos Mexicanos, y todas las leyes que de ella emanen, así como las constituciones de cada Estado soberano, y todos los reglamentos vigentes.</li>
         </ol>
-        <p class="Descripción-Artículo">Los partidos políticos tienen dos objetivos principales:</p>
+        <h3 class="TítuloArtículo">¿Sabes quién es tu diputado federal?</h3>
         
-        <p class="Autor-Artículo">Fuente: <i>Partido político</i>, en <i>Gobernación</i>. Disponible en: <a>http://sil.gobernacion.gob.mx/Glosario/definicionpop.php?ID=178</a></p>
-        <h3 class="TítuloArtículo">Partidos políticos nacionales</h3>
-        <p class="Descripción-Artículo">México es una democracia joven, y con un historial partidista bastante complejo en la dinámica política y social. A continuación se presentan los partidos políticos con presencia nacional, ordenados por fuerza de forma descendente:</p>
-        <h4 class="TítuloArtículo">Morena</h4>
-        <p class="Descripción-Artículo">
-            <img class="LogoPartidista" src="IMG/Partidos/Morena-LOGO.png" height="100px" align="left">
-            <b>Morena</b> fue creado como una asociación civil en el 2011; tiene por nombre <i>Movimiento de Regeneración Nacional</i> y obtuvo su registro como partído político en julio de 2014. El partido se declara de <b>izquierda</b>, y tiene como principios de defensa la democracia, el combate a la corrupción, y al <b>neoliberalismo</b>.
-            <br>
-            Actualmente, Morena es la principal fuerza política de México, sobretodo por la corriente dominante en el partido: el <i>lopezobradorismo</i>, encabezada por el Presidente de México, Andrés Manuel López Obrador.
-        </p>
+        <p class="Descripción-Artículo">Según tu distrito, y su extensión, es posible que haya más de un diputado representándote en la Cámara de Diputados, pero, ¿sabes quién es?, ¿te gustaría ver una lista de los 500 diputados federales? A continuación te dejo la posibilidad de hacer consultas:</p>
+        <div id="VisorDiputados">
+            <table>
+                <tr>
+                  <th>Entidad</th>
+                  <th>Distrito / Circunscripción</th>
+                  <th>Partido</th>
+                  <th>Nombre</th>
+                </tr>
+                <tr>
+                  <td id="celdaListaEntidad">
+                    <select name="Estado" id="Lista1">
+                        <option></option>
+                        <option>Aguascalientes</option>
+                        <option>Baja California</option>
+                        <option>Baja California Sur</option>
+                        <option>Campeche</option>
+                        <option>Ciudad de México</option>
+                        <option>Coahuila</option>
+                        <option>Colima</option>
+                        <option>Chiapas</option>
+                        <option>Chihuahua</option>
+                        <option>Durango</option>
+                        <option>Guanajuato</option>
+                        <option>Guerrero</option>
+                        <option>Hidalgo</option>
+                        <option>Jalisco</option>
+                        <option>México</option>
+                        <option>Michoacán</option>
+                        <option>Morelos</option>
+                        <option>Nayarit</option>
+                        <option>Nuevo León</option>
+                        <option>Oaxaca</option>
+                        <option>Puebla</option>
+                        <option>Querétaro</option>
+                        <option>Quintana Roo</option>
+                        <option>San Luis Potosí</option>
+                        <option>Sinaloa</option>
+                        <option>Sonora</option>
+                        <option>Tabasco</option>
+                        <option>Tamaulipas</option>
+                        <option>Tlaxcala</option>
+                        <option>Veracruz</option>
+                        <option>Yucatán</option>
+                        <option>Zacatecas</option>
+                    </select>
+                  </td>
+                  <td id="celdaListaDistrito">
+                    <select name="Distrito/Circunscripción" id="Lista2">
+                        <optgroup>Distrito
+                            <option>Distrito 1</option>
+                            <option>Distrito 2</option>
+                            <option>Distrito 3</option>
+                            <option>Distrito 4</option>
+                        </optgroup>
+                        <optgroup>Circunscripción
+                            <option>Circunscripción 1</option>
+                            <option>Circunscripción 2</option>
+                            <option>Circunscripción 3</option>
+                            <option>Circunscripción 4</option>
+                        </optgroup>
+                    </select>
+                  </td>
+                  <td id="celdaListaPartido">
+                    <select name="Partido" id="Lista3">
+                        <option></option>
+                        <option>Morena</option>
+                        <option>PAN</option>
+                        <option>PRI</option>
+                        <option>PVEM</option>
+                        <option>PT</option>
+                        <option>MC</option>
+                        <option>PRD</option>
+                        <option>Sin partido</option>
+                    </select>
+                  </td>
+                  <td id="celdaListaNombre">
+                      <select name="NombresDiputados" id="Lista4">
+                          <option></option>
+                      </select>
+                  </td>
+                </tr>
+              </table>
+        </div>
     </div>
     
 
@@ -80,13 +154,13 @@
         <hr id="AntesSociales">
         <script src="JavaScript/Redes Sociales.js"></script>
         <h3><a href="mailto:dantecc10@gmail.com" class="TítuloArtículo" id="ContactoCorreo">Contacto</a></h3>
-        <img class="RedSocial" alt="Ícono de Facebook" onclick="javascript:AbrirFacebook();" src="IMG/íconoFacebook.png"/>
-        <img class="RedSocial" alt="Ícono de WhatsApp" onclick="javascript:AbrirWhatsApp();" src="IMG/íconoWhatsApp.png"/>
-        <img class="RedSocial" alt="Ícono de Messenger" onclick="javascript:AbrirMessenger();" src="IMG/íconoMessenger.png"/>
-        <img class="RedSocial" alt="Ícono de YouTube" onclick="javascript:AbrirYouTube();" src="IMG/íconoYouTube.png"/>
-        <img class="RedSocial" alt="Ícono de Telegram" onclick="javascript:AbrirTelegram();" src="IMG/íconoTelegram.png"/>
-        <img class="RedSocial" alt="Ícono de Twitter" onclick="javascript:AbrirTwitter();" src="IMG/íconoTwitter.png"/>
-        <img class="RedSocial" alt="Ícono de GitHub" onclick="javascript:AbrirGitHub();" src="IMG/íconoGitHub.png"/>
+        <img class="RedSocial" alt="Ícono de Facebook" id="Facebook" onclick="javascript:AbrirFacebook();" src="IMG/íconoFacebook.png"/>
+        <img class="RedSocial" alt="Ícono de WhatsApp" id="WhatsApp" onclick="javascript:AbrirWhatsApp();" src="IMG/íconoWhatsApp.png"/>
+        <img class="RedSocial" alt="Ícono de Messenger" id="Messenger" onclick="javascript:AbrirMessenger();" src="IMG/íconoMessenger.png"/>
+        <img class="RedSocial" alt="Ícono de YouTube" id="YouTube" onclick="javascript:AbrirYouTube();" src="IMG/íconoYouTube.png"/>
+        <img class="RedSocial" alt="Ícono de Telegram" id="Telegram" onclick="javascript:AbrirTelegram();" src="IMG/íconoTelegram.png"/>
+        <img class="RedSocial" alt="Ícono de Twitter" id="Twitter" onclick="javascript:AbrirTwitter();" src="IMG/íconoTwitter.png"/>
+        <img class="RedSocial" alt="Ícono de GitHub" id="GitHub" onclick="javascript:AbrirGitHub();" src="IMG/íconoGitHub.png"/>
     </div>
 </body>
 </html>

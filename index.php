@@ -21,9 +21,11 @@
             <div id="Contenido-Encabezado">
                 <h1>Politiza MX</h1>
                 <a  href="index.html">
-                <img id="Logo" src="IMG/FAVICON.PNG" alt="Logo POLITIZA MX">
+                    <img id="Logo" src="IMG/FAVICON.PNG" alt="Logo POLITIZA MX">
                 </a>
                 <div class="Menú-Desplegable">
+                        <button class="Botón-Desplegar">Menú</button>
+                        <div class="Menú-Desplegable">
                         <button class="Botón-Desplegar">Menú</button>
                         <div class="Contenido-Desplegable">
                             <a href="SignificadoPolítica.html">¿Qué es la política?</a>
@@ -35,6 +37,7 @@
                             <a href="AcercaDe.html">Acerca de...</a>
                         </div>
                 </div>
+                </div>
             </div>
         </div>
         <div id="Encabezado-Superior"></div>
@@ -42,28 +45,25 @@
     </header>
     <!--Termina NavBar-->
     <!--Contenido-->
-    
-    
-
-    <!--Footer
-    <div id="FooterDIV">
-    <footer>
-        <p>Author: Hege Refsnes</p>
-        <p><a href="mailto:hege@example.com">hege@example.com</a></p>
-    </footer>
+    <h2 id="IndicaArtículos">Artículos disponibles</h2>
+    <div id="Contenedor-Artículos">
+        <h3 class="TítuloArtículo">¿Qué sucedió en la Revocación de Mandato?</h3>
+        <h4 class="Autor-Artículo">Por Dante Castelán Carpinteyro.</h4>
+        <p class="Descripción-Artículo">Este domingo 10 de abril, se llevó a cabo un ejercicio democrático sin precedentes en la historia de México; con éxito, y a pesar de los obstáculos que el Instituto Nacional Electoral puso en el camino, el pueblo de México partició en la consulta de Revocación de Mandato, la cual busca consolidarse como una herramienta que será la herencia de López Obrador a la democracia mexicana para poder deshacerse de cualquier presidente de la República que no funcione o no tenga el respaldo popular.</p>
     </div>
-    -->
+
     <div id="Redes Sociales" align="center">
         <hr id="AntesSociales">
-        <script src="/JavaScript/Redes Sociales.js"></script>
+        <script src="JavaScript/Redes Sociales.js"></script>
         <h3><a href="mailto:dantecc10@gmail.com" class="TítuloArtículo" id="ContactoCorreo">Contacto</a></h3>
-        <img class="RedSocial" alt="Ícono de Facebook" onclick="javascript:AbrirFacebook();" src="IMG/íconoFacebook.png"/>
-        <img class="RedSocial" alt="Ícono de WhatsApp" onclick="javascript:AbrirWhatsApp();" src="IMG/íconoWhatsApp.png"/>
-        <img class="RedSocial" alt="Ícono de Messenger" onclick="javascript:AbrirMessenger();" src="IMG/íconoMessenger.png"/>
-        <img class="RedSocial" alt="Ícono de YouTube" onclick="javascript:AbrirYouTube();" src="IMG/íconoYouTube.png"/>
-        <img class="RedSocial" alt="Ícono de Telegram" onclick="javascript:AbrirTelegram();" src="IMG/íconoTelegram.png"/>
-        <img class="RedSocial" alt="Ícono de Twitter" onclick="javascript:AbrirTwitter();" src="IMG/íconoTwitter.png"/>
-        <img class="RedSocial" alt="Ícono de GitHub" onclick="javascript:AbrirGitHub();" src="IMG/íconoGitHub.png"/>
+        <img class="RedSocial" alt="Ícono de Facebook" id="Facebook" onclick="javascript:AbrirFacebook();" src="IMG/íconoFacebook.png"/>
+        <img class="RedSocial" alt="Ícono de WhatsApp" id="WhatsApp" onclick="javascript:AbrirWhatsApp();" src="IMG/íconoWhatsApp.png"/>
+        <img class="RedSocial" alt="Ícono de Messenger" id="Messenger" onclick="javascript:AbrirMessenger();" src="IMG/íconoMessenger.png"/>
+        <img class="RedSocial" alt="Ícono de YouTube" id="YouTube" onclick="javascript:AbrirYouTube();" src="IMG/íconoYouTube.png"/>
+        <img class="RedSocial" alt="Ícono de Telegram" id="Telegram" onclick="javascript:AbrirTelegram();" src="IMG/íconoTelegram.png"/>
+        <img class="RedSocial" alt="Ícono de Twitter" id="Twitter" onclick="javascript:AbrirTwitter();" src="IMG/íconoTwitter.png"/>
+        <img class="RedSocial" alt="Ícono de GitHub" id="GitHub" onclick="javascript:AbrirGitHub();" src="IMG/íconoGitHub.png"/>
     </div>
+    <hr>
 </body>
 </html>
