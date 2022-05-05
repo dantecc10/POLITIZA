@@ -11,7 +11,7 @@
     <meta http-equiv="refresh" content="30">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>Politiza MX - Junior: La política es de todos</title>
+    <title>Politiza MX: La política es de todos</title>
 </head>
 <body>
     <!--Encabezado (no mover)-->
