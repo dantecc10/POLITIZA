@@ -472,7 +472,7 @@
 /*Fin de punto de ruptura para tablets*/
 @media only screen and (max-width: 480px)
 
-/*Punto de ruptura para pantallas grandes (equipos de escritorio)*/
+/*Punto de ruptura para móviles*/
     {
     h2#IndicaArtículos {
         color: #07A189;
