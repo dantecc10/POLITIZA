@@ -229,8 +229,7 @@
 
 /*Fin de punto de ruptura para pantallas grandes*/
 @media only screen and (max-width: 1024px)
-
-/*Punto de ruptura para pantallas grandes (equipos de escritorio)*/
+/*Punto de ruptura para tablets*/
     {
     h2#IndicaArtículos {
         color: #07A189;
@@ -637,9 +636,9 @@
 
     /*Redes sociales*/
     img.RedSocial {
-        width: 45px;
-        height: 45px;
-        margin: 5px;
+        width: 30px;
+        height: 30px;
+        margin: 7.5px;
         cursor: pointer;
         transition: 400ms;
     }
