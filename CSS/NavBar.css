@@ -115,14 +115,8 @@
         justify-content: left;
     }
 
-    img#Logo:hover {
-        width: 135px;
-        height: 135px;
-    }
-
     img#Logo {
         width: 115px;
         height: 115px;
-        margin-right: 20%;
     }
 }

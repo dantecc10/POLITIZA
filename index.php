@@ -52,7 +52,7 @@
         <p class="Descripción-Artículo">Este domingo 10 de abril, se llevó a cabo un ejercicio democrático sin precedentes en la historia de México; con éxito, y a pesar de los obstáculos que el Instituto Nacional Electoral puso en el camino, el pueblo de México partició en la consulta de Revocación de Mandato, la cual busca consolidarse como una herramienta que será la herencia de López Obrador a la democracia mexicana para poder deshacerse de cualquier presidente de la República que no funcione o no tenga el respaldo popular.</p>
     </div>
 
-    <div id="Redes Sociales" align="center">
+    <div id="RedesSociales" align="center">
         <hr id="AntesSociales">
         <script src="JavaScript/Redes Sociales.js"></script>
         <h3><a href="mailto:dantecc10@gmail.com" class="TítuloArtículo" id="ContactoCorreo">Contacto</a></h3>
