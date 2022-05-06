@@ -570,6 +570,10 @@
         margin-right: 5%;
     }
 
+    ol.Descripción-Artículo{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
     img.LogoPartidista {
         height: 100px;
         border-radius: 25px;
