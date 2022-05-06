@@ -1,4 +1,4 @@
-const contenedor = document.getElementById("contenido-principal");
+
 const url = "https://raw.githubusercontent.com/dantecc10/API-POLITIZA/master/DiputadosMorena.json";
 const uri = "https://raw.githubusercontent.com/dantecc10/API-POLITIZA/master/"
 
@@ -10,17 +10,17 @@ fetch(url).then(function(respuesta)
 {
     return respuesta.json();
 }
-).then(function(datos){
+).then(function(Diputado1){
 
     index = 1;
     UbicaciónInserción.innerHTML = "Soy Dante";
-    UbicaciónInserción.innerHTML =  "<p>"+datos[index]["número"]+" "+datos[index]["nombre"]+" "+datos[index]["apellidoPaterno"]+" "+datos[index]["apellidoMaterno"]+"del estado de "+datos[index]["entidad"]+"de "+datos[index]["distrito_circunscripcion"]+" de la bancada de "+datos[index]["partido"]+"</p>";
+    UbicaciónInserción.innerHTML =  "<p>"+Diputado1[index]["número"]+" "+Diputada1[index]["nombre"]+" "+Diputada1[index]["apellidoPaterno"]+" "+Diputada1[index]["apellidoMaterno"]+"del estado de "+Diputada1[index]["entidad"]+"de "+Diputada1[index]["distrito_circunscripcion"]+" de la bancada de "+Diputada1[index]["partido"]+"</p>";
 
 
-    console.log(datos);
-    for(let i = 0; i < datos.length; i++)
+    console.log(Diputada1);
+    for(let i = 0; i < Diputada1.length; i++)
     {
-        UbicaciónInserción.innerHTML +=  "<div class='poster'><img src='"+uri+datos[i]["imagen"]+"'><h3>"+datos[i]["nombre"]+"</h3><div></div>";
+        UbicaciónInserción.innerHTML +=  "<div class='poster'><img src='"+uri+Diputada1[i]["imagen"]+"'><h3>"+Diputada1[i]["nombre"]+"</h3><div></div>";
     }
 }
 ).catch(function(error)

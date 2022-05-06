@@ -17,32 +17,6 @@
 </head>
 
 <body>
-    <script src="JavaScript/JSON-API-2.js">
-        const contenedor = document.getElementById("contenido-principal");
-        const url = "https://raw.githubusercontent.com/dantecc10/API-POLITIZA/master/DiputadosMorena.json";
-        const uri = "https://raw.githubusercontent.com/dantecc10/API-POLITIZA/master/"
-
-        let UbicaciónInserción = document.getElementById("MostrarDiputados"); //Propio: Identificar div de inserción
-        var index;
-
-
-        fetch(url).then(function (respuesta) {
-            return respuesta.json();
-        }
-        ).then(function (datos) {
-
-            index = 1;
-            UbicaciónInserción.innerHTML = "Soy Dante";
-            UbicaciónInserción.innerHTML = "<p>" + datos[index]["número"] + " " + datos[index]["nombre"] + " " + datos[index]["apellidoPaterno"] + " " + datos[index]["apellidoMaterno"] + "del estado de " + datos[index]["entidad"] + "de " + datos[index]["distrito_circunscripcion"] + " de la bancada de " + datos[index]["partido"] + "</p>";
-
-
-            console.log(datos);
-            
-        }
-        ).catch(function (error) {
-            console.log(error);
-        });
-    </script>
     <!--Encabezado (no mover)-->
     <br>
     <header id="Encabezado">
@@ -91,6 +65,7 @@
         <p class="Descripción-Artículo">Según tu distrito, y su extensión, es posible que haya más de un diputado
             representándote en la Cámara de Diputados, pero, ¿sabes quién es?, ¿te gustaría ver una lista de los 500
             diputados federales? A continuación te dejo la posibilidad de hacer consultas:</p>
+        <script src="JavaScript/JSON-API-2.js"></script>
         <div id="MostrarDiputados">Dante</div>
         <div id="VisorDiputados">
             <table>
