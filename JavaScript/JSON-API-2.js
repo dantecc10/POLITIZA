@@ -2,7 +2,7 @@ const contenedor = document.getElementById("contenido-principal");
 const url = "https://raw.githubusercontent.com/dantecc10/API-POLITIZA/master/DiputadosMorena.json";
 const uri = "https://raw.githubusercontent.com/dantecc10/API-POLITIZA/master/"
 
-let UbicaciónInserción = document.getElementById("MostrarDiputados").innerHTML; //Propio: Identificar div de inserción
+let UbicaciónInserción = document.getElementById("MostrarDiputados"); //Propio: Identificar div de inserción
 var index;
 
 
@@ -12,12 +12,9 @@ fetch(url).then(function(respuesta)
 }
 ).then(function(datos){
 
-    UbicaciónInserción.innerHTML +=  "<div class='MuestraDiputado'><p>"+      "</p></div>";
     index = 1;
-
-
-
-    UbicaciónInserción.innerHTML +=  "<div><p>"+datos[index]["número"]+" "+datos[index]["nombre"]+" "+datos[index]["apellidoPaterno"]+" "+datos[index]["apellidoMaterno"]+"del estado de "+datos[index]["entidad"]+"de "+datos[index]["distrito_circunscripcion"]+" de la bancada de "+datos[index]["partido"]+"</p></div>";
+    UbicaciónInserción.innerHTML = "Soy Dante";
+    UbicaciónInserción.innerHTML =  "<p>"+datos[index]["número"]+" "+datos[index]["nombre"]+" "+datos[index]["apellidoPaterno"]+" "+datos[index]["apellidoMaterno"]+"del estado de "+datos[index]["entidad"]+"de "+datos[index]["distrito_circunscripcion"]+" de la bancada de "+datos[index]["partido"]+"</p>";
 
 
     console.log(datos);
