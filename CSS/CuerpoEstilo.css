@@ -479,14 +479,9 @@
         text-indent: 50px;
     }
 
-    div.Contenedor-Artículos.Limitado {
+    div.Contenedor-Artículos {
         margin-top: -20px;
-        width: 90%;
-        overflow-y: auto;
-        overflow-x: auto;
-        height: 300px;
-        padding-left: 5%;
-        padding-right: 5%;
+        width: 100%;
     }
 
     div.Contenedor-Artículos#PartidosPolíticos {
@@ -570,9 +565,14 @@
         margin-right: 5%;
     }
 
-    ol.Descripción-Artículo{
-        padding-left: 10px;
-        padding-right: 10px;
+    ol.Descripción-Artículo {
+        margin-left: 5px;
+        margin-right: 5px;
+        width: 75%;
+    }
+    p.Descripción-Artículo{
+        margin-left: 5px;
+        width: 75%;
     }
     img.LogoPartidista {
         height: 100px;
@@ -620,9 +620,9 @@
         color: white;
         background-color: #07a18a5f;
         border-radius: 25px;
-        width: 90%;
+        width: 72%;
         margin-right: 5%;
-        margin-left: 5%;
+        margin-left: 2%;
         padding: 25px;
     }
 
@@ -638,6 +638,8 @@
 
     div#RedesSociales {
         align-items: center;
+        margin-left: -30px;
+        margin-right: -30px;
     }
 
     /*Redes sociales*/
@@ -658,7 +660,12 @@
         margin-right: 0px;
         transition: 500ms;
     }
-
+    img.RedSocial#Facebook{
+        margin-left: 0px;    
+    }
+    img.RedSocial#GitHub{
+        margin-right: 0px;    
+    }
 
     img.RedSocial#YouTube,
     img.RedSocial#GitHub {
