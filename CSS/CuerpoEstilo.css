@@ -2,6 +2,12 @@
 
 /*Punto de ruptura para pantallas grandes (equipos de escritorio)*/
     {
+    #copyright {
+        text-align: center;
+        color: whitesmoke;
+        text-decoration: dotted;
+    }
+
     h2#IndicaArtículos {
         color: #07A189;
         text-align: justify;
@@ -114,34 +120,22 @@
         width: 100px;
     }
 
-    div select#Lista1,
-    div select#Lista2,
-    div select#Lista3,
-    div select#Lista4 {
+    select#Lista1,
+    select#Lista2,
+    select#Lista3,
+    select#Lista4 {
         text-align: center;
         color: #07A189;
         background-color: #0c38e8;
-        margin: 5px;
-        width: 100%;
+        width: 50%;
+        font-size: 20px;
+    
+        margin-left: 25%;
+        margin-right: 25%;
     }
 
-    div#VisorDiputados {
-        color: white;
+    div#MostrarDiputados {
         background-color: #07a18a5f;
-        border-radius: 25px;
-        width: 90%;
-        margin-right: 5%;
-        margin-left: 5%;
-        padding: 25px;
-    }
-
-    div#VisorDiputados table {
-        width: 100%;
-    }
-
-    div#VisorDiputados table tr {
-        width: 25%;
-        margin: 10px;
     }
 
     div#RedesSociales {
@@ -345,40 +339,30 @@
         width: 100px;
     }
 
-    div select#Lista1,
-    div select#Lista2,
-    div select#Lista3,
-    div select#Lista4 {
+    select#Lista1,
+    select#Lista2,
+    select#Lista3,
+    select#Lista4 {
         text-align: center;
         color: #07A189;
         background-color: #0c38e8;
-        margin: 5px;
-        width: 100%;
+        width: 50%;
+        font-size: 20px;
+    
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+
+    div#MostrarDiputados {
+        background-color: #07a18a5f;
+        margin-left: 80px;
+        margin-right: 80px;
     }
 
     #copyright {
         text-align: center;
         color: whitesmoke;
         text-decoration: dotted;
-    }
-
-    div#VisorDiputados {
-        color: white;
-        background-color: #07a18a5f;
-        border-radius: 25px;
-        width: 90%;
-        margin-right: 5%;
-        margin-left: 5%;
-        padding: 25px;
-    }
-
-    div#VisorDiputados table {
-        width: 100%;
-    }
-
-    div#VisorDiputados table tr {
-        width: 25%;
-        margin: 10px;
     }
 
     div#RedesSociales {
@@ -591,7 +575,11 @@
         text-align: center;
         color: #07A189;
         background-color: #0c38e8;
-        margin: 100%;
+        width: 50%;
+        font-size: 20px;
+    
+        margin-left: 25%;
+        margin-right: 25%;
     }
 
     div#MostrarDiputados {
