@@ -52,9 +52,31 @@
         <h3 class="TítuloArtículo">¿Sabes quién es tu diputado federal?</h3>
         <p class="Descripción-Artículo">Según tu distrito, y su extensión, es posible que haya más de un diputado
             representándote en la Cámara de Diputados, pero, ¿sabes quién es?, ¿te gustaría ver una lista de los 500
-            diputados federales? A continuación te dejo la posibilidad de hacer consultas:</p>
+            diputados federales? A continuación te muestro la lista de los 500 diputados federales clasificados por bancadas:</p>
         <script src="JavaScript/JSON-API-2.js"></script>
-        <p class="Descripción-Artículo">Estado:</p> 
+        <p class="Descripción-Artículo">Partido político:</p>
+        <select name="Partido" id="Lista3">
+            <option></option>
+            <option>Morena</option>
+            <option>PAN</option>
+            <option>PRI</option>
+            <option>PVEM</option>
+            <option>PT</option>
+            <option>MC</option>
+            <option>PRD</option>
+            <option>Sin partido</option>
+        </select>
+        <hr>
+        <table id="InsertarResultados">
+            <tr>
+                <th>Número</th>
+                <th>Nombre completo</th>
+                <th>Partido</th>
+                <th>Entidad</th>
+                <th>Distrito o Circunscripción</th>
+            </tr>
+        </table>
+        <!--<p class="Descripción-Artículo">Estado:</p> 
         <select name="Estado" id="Lista1">
             <option></option>
             <option>Aguascalientes</option>
@@ -121,7 +143,7 @@
         <select name="NombresDiputados" id="Lista4">
             <option></option>
         </select>
-    </div>
+    </div> -->
     <!--Footer    <div id="FooterDIV">    <footer>        <p>Author: Hege Refsnes</p>        <p><a href="mailto:hege@example.com">hege@example.com</a></p>    </footer>    </div>    -->
     <footer>
         <div id="RedesSociales" align="center">

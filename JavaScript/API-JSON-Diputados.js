@@ -11,7 +11,7 @@ const url_DApartidistas = "D:/MEGA/MEGA CLOUD/DANTE/ACADÉMICO/API POLITIZA" //"
 
 const url_general = "D:/MEGA/MEGA CLOUD/DANTE/ACADÉMICO/API POLITIZA" //"https://raw.githubusercontent.com/dantecc10/API-POLITIZA/master/";
 
-{ "employees":[
+{ "employees";[
         {"firstName": "John", "lastName": "Doe"},
         {"firstName": "Anna", "lastName": "Smith"},
         {"firstName": "Peter", "lastName": "Jones"}
@@ -20,11 +20,6 @@ const url_general = "D:/MEGA/MEGA CLOUD/DANTE/ACADÉMICO/API POLITIZA" //"https:
 let text = '{ "employees" : [' + '{"firstName": "John" , "lastName": "Doe" },' + '{"firstName": "Anna" , "lastName": "Smith" },' + '{"firstName": "Peter" , "lastName": "Jones" }';
 
 const obj = JSON.parse()
-
-
-
-
-
 
 
 

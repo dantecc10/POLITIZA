@@ -352,6 +352,21 @@
         margin-left: 25%;
         margin-right: 25%;
     }
+    table#InsertarResultados{
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+        border: 2px solid;
+    }
+    #InsertarResultados th,
+    #InsertarResultados tr{
+        border: 2px solid;
+    }
+    #InsertarResultados th{
+        width: 500px;
+    }
+
+
 
     div#MostrarDiputados {
         background-color: #07a18a5f;
