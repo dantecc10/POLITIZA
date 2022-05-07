@@ -374,7 +374,11 @@
         margin: 5px;
         width: 100%;
     }
-
+    #copyright{
+        text-align: center;
+        color: whitesmoke;
+        text-decoration: dotted;
+    }
     div#VisorDiputados {
         color: white;
         background-color: #07a18a5f;
@@ -570,10 +574,12 @@
         margin-right: 5px;
         width: 75%;
     }
-    p.Descripción-Artículo{
+
+    p.Descripción-Artículo {
         margin-left: 5px;
         width: 75%;
     }
+
     img.LogoPartidista {
         height: 100px;
         border-radius: 25px;
@@ -605,34 +611,20 @@
         width: 100px;
     }
 
-    div select#Lista1,
-    div select#Lista2,
-    div select#Lista3,
-    div select#Lista4 {
+    select#Lista1,
+    select#Lista2,
+    select#Lista3,
+    select#Lista4 {
         text-align: center;
         color: #07A189;
         background-color: #0c38e8;
-        margin: 5px;
-        width: 100%;
+        margin: 100%;
     }
 
-    div#VisorDiputados {
-        color: white;
+    div#MostrarDiputados {
         background-color: #07a18a5f;
-        border-radius: 25px;
-        width: 72%;
-        margin-right: 5%;
-        margin-left: 2%;
-        padding: 25px;
-    }
-
-    div#VisorDiputados table {
-        width: 100%;
-    }
-
-    div#VisorDiputados table tr {
-        width: 25%;
-        margin: 10px;
+        margin-left: 80px;
+        margin-right: 80px;
     }
 
 
@@ -660,11 +652,13 @@
         margin-right: 0px;
         transition: 500ms;
     }
-    img.RedSocial#Facebook{
-        margin-left: 0px;    
+
+    img.RedSocial#Facebook {
+        margin-left: 0px;
     }
-    img.RedSocial#GitHub{
-        margin-right: 0px;    
+
+    img.RedSocial#GitHub {
+        margin-right: 0px;
     }
 
     img.RedSocial#YouTube,

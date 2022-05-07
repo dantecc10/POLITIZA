@@ -1,43 +1,29 @@
 //Declaración de funciones de redes sociales
-function AbrirFacebook()
-{
+function AbrirFacebook() {
     alert("Le redirigiré a mi perfil de Facebook...");
-    //location.href="https://www.facebook.com/DanteCC10.4T";
     window.open('https://www.facebook.com/DanteCC10.4T', '_blank');
 }
-function AbrirWhatsApp()
-{
+function AbrirWhatsApp() {
     alert("Le redirigiré a un chat conmigo en WhatsApp...");
-    //location.href="https://wa.me/527979773095";
     window.open('https://wa.me/527979773095', '_blank');
 }
-function AbrirMessenger()
-{
+function AbrirMessenger() {
     alert("Le redirigiré a un chat conmigo en Messenger...");
-    //location.href="https://m.me/dantecc10fi";
     window.open('https://m.me/dantecc10fi', '_blank');
-}		
-function AbrirYouTube()
-{
+}
+function AbrirYouTube() {
     alert("Le redirigiré mi canal de YouTube...");
-    //location.href="https://www.youtube.com/channel/UCXjG-Lpe_lEUwVdBHS2u3Aw";
     window.open('https://www.youtube.com/channel/UCXjG-Lpe_lEUwVdBHS2u3Aw', '_blank');
-}		
-function AbrirTelegram()
-{
+}
+function AbrirTelegram() {
     alert("Le redirigiré a un chat conmigo en Telegram...");
-    //location.href="https://t.me/dantecc10";
     window.open('https://t.me/dantecc10', '_blank');
-}		
-function AbrirTwitter()
-{
+}
+function AbrirTwitter() {
     alert("Le redirigiré a mi cuenta de Twitter...");
-    //location.href="https://www.twitter.com/dantecc10";
     window.open('https://www.twitter.com/dantecc10', '_blank');
 }
-function AbrirGitHub()
-{
+function AbrirGitHub() {
     alert("Le redirigiré a mis respositorios de GitHub...");
-    //location.href="https://www.github.com/dantecc10";
     window.open('https://www.github.com/dantecc10', '_blank');
 }

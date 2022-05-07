@@ -66,90 +66,71 @@
             representándote en la Cámara de Diputados, pero, ¿sabes quién es?, ¿te gustaría ver una lista de los 500
             diputados federales? A continuación te dejo la posibilidad de hacer consultas:</p>
         <script src="JavaScript/JSON-API-2.js"></script>
-        <div id="MostrarDiputados">Dante</div>
-        <div id="VisorDiputados">
-            <table>
-                <tr>
-                    <th>Entidad</th>
-                    <th>Distrito / Circunscripción</th>
-                    <th>Partido</th>
-                    <th>Nombre</th>
-                </tr>
-                <tr>
-                    <td id="celdaListaEntidad">
-                        <select name="Estado" id="Lista1">
-                            <option></option>
-                            <option>Aguascalientes</option>
-                            <option>Baja California</option>
-                            <option>Baja California Sur</option>
-                            <option>Campeche</option>
-                            <option>Ciudad de México</option>
-                            <option>Coahuila</option>
-                            <option>Colima</option>
-                            <option>Chiapas</option>
-                            <option>Chihuahua</option>
-                            <option>Durango</option>
-                            <option>Guanajuato</option>
-                            <option>Guerrero</option>
-                            <option>Hidalgo</option>
-                            <option>Jalisco</option>
-                            <option>México</option>
-                            <option>Michoacán</option>
-                            <option>Morelos</option>
-                            <option>Nayarit</option>
-                            <option>Nuevo León</option>
-                            <option>Oaxaca</option>
-                            <option>Puebla</option>
-                            <option>Querétaro</option>
-                            <option>Quintana Roo</option>
-                            <option>San Luis Potosí</option>
-                            <option>Sinaloa</option>
-                            <option>Sonora</option>
-                            <option>Tabasco</option>
-                            <option>Tamaulipas</option>
-                            <option>Tlaxcala</option>
-                            <option>Veracruz</option>
-                            <option>Yucatán</option>
-                            <option>Zacatecas</option>
-                        </select>
-                    </td>
-                    <td id="celdaListaDistrito">
-                        <select name="Distrito/Circunscripción" id="Lista2">
-                            <optgroup>Distrito
-                                <option>Distrito 1</option>
-                                <option>Distrito 2</option>
-                                <option>Distrito 3</option>
-                                <option>Distrito 4</option>
-                            </optgroup>
-                            <optgroup>Circunscripción
-                                <option>Circunscripción 1</option>
-                                <option>Circunscripción 2</option>
-                                <option>Circunscripción 3</option>
-                                <option>Circunscripción 4</option>
-                            </optgroup>
-                        </select>
-                    </td>
-                    <td id="celdaListaPartido">
-                        <select name="Partido" id="Lista3">
-                            <option></option>
-                            <option>Morena</option>
-                            <option>PAN</option>
-                            <option>PRI</option>
-                            <option>PVEM</option>
-                            <option>PT</option>
-                            <option>MC</option>
-                            <option>PRD</option>
-                            <option>Sin partido</option>
-                        </select>
-                    </td>
-                    <td id="celdaListaNombre">
-                        <select name="NombresDiputados" id="Lista4">
-                            <option></option>
-                        </select>
-                    </td>
-                </tr>
-            </table>
-        </div>
+        <p class="Descripción-Artículo">Estado:</p>
+        <select name="Estado" id="Lista1">
+            <option></option>
+            <option>Aguascalientes</option>
+            <option>Baja California</option>
+            <option>Baja California Sur</option>
+            <option>Campeche</option>
+            <option>Ciudad de México</option>
+            <option>Coahuila</option>
+            <option>Colima</option>
+            <option>Chiapas</option>
+            <option>Chihuahua</option>
+            <option>Durango</option>
+            <option>Guanajuato</option>
+            <option>Guerrero</option>
+            <option>Hidalgo</option>
+            <option>Jalisco</option>
+            <option>México</option>
+            <option>Michoacán</option>
+            <option>Morelos</option>
+            <option>Nayarit</option>
+            <option>Nuevo León</option>
+            <option>Oaxaca</option>
+            <option>Puebla</option>
+            <option>Querétaro</option>
+            <option>Quintana Roo</option>
+            <option>San Luis Potosí</option>
+            <option>Sinaloa</option>
+            <option>Sonora</option>
+            <option>Tabasco</option>
+            <option>Tamaulipas</option>
+            <option>Tlaxcala</option>
+            <option>Veracruz</option>
+            <option>Yucatán</option>
+            <option>Zacatecas</option>
+        </select>
+        <p class="Descripción-Artículo">Distrito o Circunscripción:</p>
+        <select name="Distrito/Circunscripción" id="Lista2">
+            <optgroup>Distrito
+                <option>Distrito 1</option>
+                <option>Distrito 2</option>
+                <option>Distrito 3</option>
+                <option>Distrito 4</option>
+            </optgroup>
+            <optgroup>Circunscripción
+                <option>Circunscripción 1</option>
+                <option>Circunscripción 2</option>
+                <option>Circunscripción 3</option>
+                <option>Circunscripción 4</option>
+            </optgroup>
+        </select>
+        <select name="Partido" id="Lista3">
+            <option></option>
+            <option>Morena</option>
+            <option>PAN</option>
+            <option>PRI</option>
+            <option>PVEM</option>
+            <option>PT</option>
+            <option>MC</option>
+            <option>PRD</option>
+            <option>Sin partido</option>
+        </select>
+        <select name="NombresDiputados" id="Lista4">
+            <option></option>
+        </select>
     </div>
 
 
@@ -161,25 +142,28 @@
     </footer>
     </div>
     -->
-    <div id="RedesSociales" align="center">
-        <hr id="AntesSociales">
-        <script src="JavaScript/Redes Sociales.js"></script>
-        <h3><a href="mailto:dantecc10@gmail.com" class="TítuloArtículo" id="ContactoCorreo">Contacto</a></h3>
-        <img class="RedSocial" alt="Ícono de Facebook" id="Facebook" onclick="javascript:AbrirFacebook();"
-            src="IMG/íconoFacebook.png" />
-        <img class="RedSocial" alt="Ícono de WhatsApp" id="WhatsApp" onclick="javascript:AbrirWhatsApp();"
-            src="IMG/íconoWhatsApp.png" />
-        <img class="RedSocial" alt="Ícono de Messenger" id="Messenger" onclick="javascript:AbrirMessenger();"
-            src="IMG/íconoMessenger.png" />
-        <img class="RedSocial" alt="Ícono de YouTube" id="YouTube" onclick="javascript:AbrirYouTube();"
-            src="IMG/íconoYouTube.png" />
-        <img class="RedSocial" alt="Ícono de Telegram" id="Telegram" onclick="javascript:AbrirTelegram();"
-            src="IMG/íconoTelegram.png" />
-        <img class="RedSocial" alt="Ícono de Twitter" id="Twitter" onclick="javascript:AbrirTwitter();"
-            src="IMG/íconoTwitter.png" />
-        <img class="RedSocial" alt="Ícono de GitHub" id="GitHub" onclick="javascript:AbrirGitHub();"
-            src="IMG/íconoGitHub.png" />
-    </div>
+    <footer>
+        <div id="RedesSociales" align="center">
+            <hr id="AntesSociales">
+            <script src="JavaScript/Redes Sociales.js"></script>
+            <h3><a href="mailto:dantecc10@gmail.com" class="TítuloArtículo" id="ContactoCorreo">Contacto</a></h3>
+            <img class="RedSocial" alt="Ícono de Facebook" id="Facebook" onclick="javascript:AbrirFacebook();"
+                src="IMG/íconoFacebook.png" />
+            <img class="RedSocial" alt="Ícono de WhatsApp" id="WhatsApp" onclick="javascript:AbrirWhatsApp();"
+                src="IMG/íconoWhatsApp.png" />
+            <img class="RedSocial" alt="Ícono de Messenger" id="Messenger" onclick="javascript:AbrirMessenger();"
+                src="IMG/íconoMessenger.png" />
+            <img class="RedSocial" alt="Ícono de YouTube" id="YouTube" onclick="javascript:AbrirYouTube();"
+                src="IMG/íconoYouTube.png" />
+            <img class="RedSocial" alt="Ícono de Telegram" id="Telegram" onclick="javascript:AbrirTelegram();"
+                src="IMG/íconoTelegram.png" />
+            <img class="RedSocial" alt="Ícono de Twitter" id="Twitter" onclick="javascript:AbrirTwitter();"
+                src="IMG/íconoTwitter.png" />
+            <img class="RedSocial" alt="Ícono de GitHub" id="GitHub" onclick="javascript:AbrirGitHub();"
+                src="IMG/íconoGitHub.png" />
+        </div>
+        <p id="copyright">Copyright © Dante Castelán Carpinteyro - <i>Führer Industries</i> -  2022</p>
+    </footer>
 </body>
 
 </html>
