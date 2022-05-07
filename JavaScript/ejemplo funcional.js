@@ -1,4 +1,4 @@
-let url = "https://pokeapi.co/api/v2/pokemon/charizard";
+let url = "https://pokeapi.co/api/v2/pokemon/pikachu";
 
 fetch(url).then(function(response){
     //Lógica de éxito
