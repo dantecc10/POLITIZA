@@ -179,6 +179,7 @@ function búsquedaApartidistas() {
 
 function leerPartido() {
     document.getElementById("ListaDinámica").innerHTML=("");
+    document.getElementById("InsertarResultados").innerHTML=("<tr><th>Número</th><th>Nombre completo</th><th>Partido</th><th>Entidad</th><th>Distrito o <br>Circunscripción</th></tr>");
 
     
     var índiceSeleccionadoPartido;
