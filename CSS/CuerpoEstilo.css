@@ -129,7 +129,7 @@
         background-color: #0c38e8;
         width: 50%;
         font-size: 20px;
-    
+
         margin-left: 25%;
         margin-right: 25%;
     }
@@ -338,7 +338,6 @@
         text-align: center;
         width: 100px;
     }
-
     select#Lista1,
     select#Lista2,
     select#Lista3,
@@ -348,26 +347,23 @@
         background-color: #0c38e8;
         width: 50%;
         font-size: 20px;
-    
+
         margin-left: 25%;
         margin-right: 25%;
     }
-    table#InsertarResultados{
-        width: 80%;
-        margin-left: 10%;
-        margin-right: 10%;
-        border: 2px solid;
+    table#InsertarResultados {
+        width: 100%;
     }
     #InsertarResultados th,
-    #InsertarResultados tr{
-        border: 2px solid;
+    #InsertarResultados tr,
+    #InsertarResultados td {
+        border: 2px solid #07A189;
+        text-align: center;
+        border-radius: 5px;
     }
-    #InsertarResultados th{
-        width: 500px;
+    #InsertarResultados th {
+        background-color: #0c38e8;
     }
-
-
-
     div#MostrarDiputados {
         background-color: #07a18a5f;
         margin-left: 80px;
@@ -592,7 +588,7 @@
         background-color: #0c38e8;
         width: 50%;
         font-size: 20px;
-    
+
         margin-left: 25%;
         margin-right: 25%;
     }

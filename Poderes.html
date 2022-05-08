@@ -10,7 +10,6 @@
     <meta name="author" content="Dante Castelán Carpinteyro">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta http-equiv="refresh" content="30">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Politiza MX: La política es de todos</title>
 </head>
@@ -55,7 +54,7 @@
             diputados federales? A continuación te muestro la lista de los 500 diputados federales clasificados por bancadas:</p>
         <script src="JavaScript/JSON-API-2.js"></script>
         <p class="Descripción-Artículo">Partido político:</p>
-        <select name="Partido" id="Lista3">
+        <select name="Partido" id="Lista3" onchange="leerPartido()">
             <option></option>
             <option>Morena</option>
             <option>PAN</option>
@@ -75,7 +74,15 @@
                 <th>Entidad</th>
                 <th>Distrito o Circunscripción</th>
             </tr>
+            <tr>
+                <td>Número 1</td>
+                <td>Nombre 1</td>
+                <td>Partido 1</td>
+                <td>Entidad 1</td>
+                <td>Representación 1</td>
+            </tr>
         </table>
+        <p class="Descripción-Artículo" id="Experimental"></p>
         <!--<p class="Descripción-Artículo">Estado:</p> 
         <select name="Estado" id="Lista1">
             <option></option>

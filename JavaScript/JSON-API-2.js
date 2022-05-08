@@ -161,16 +161,21 @@ function búsquedaApartidistas() {
     });
 }
 
-function leerPartido()
-{
+function leerPartido() {
     var índiceSeleccionadoPartido = document.getElementById("Lista3").selectedIndex;
 
-    var stringSeleccionadoPartido = document.getElementById("Lista3").options[document.getElementById("Lista3").selectedIndex].text;
+    var posibleTexto = document.getElementById("Lista3").textContent;
+    console.log("La prueba arrojó: '"+x+"'.");
+    document.getElementById("Experimental").innerText("Inner funcional");
     
-    var valorSeleccionadoPartido = document.getElementById('Lista3').options[document.getElementById("Lista3").selectedIndex].value;
+    
 
-    switch (stringSeleccionadoPartido)
-    {
+    var stringSeleccionadoPartido = document.getElementById("Lista3").options[document.getElementById("Lista3").selectedIndex].text;
+    console.log(stringSeleccionadoPartido);
+
+    var valorSeleccionadoPartido = document.getElementById("Lista3").options[document.getElementById("Lista3").selectedIndex].value;
+
+    switch (stringSeleccionadoPartido) {
         case "Morena":
             búsquedaMorena();
             break;
