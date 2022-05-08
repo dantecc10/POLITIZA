@@ -9,9 +9,11 @@ function búsquedaMorena() {
         //nombre = document.getElementById("nombre");
         for (var i = 1; i != data.length; i++) {
             console.log("Diputad@ ", data[i]["número"], ".- ", data[i]["nombre"], " ", data[i]["apellidoPaterno"], " ", data[i]["apellidoMaterno"], " del Estado de ", data[i]["entidad"], " que representa al (a la) ", data[i]["distrito_circunscripcion"], "que representa a ", data[i]["partido"]);
-            if (data[i]["entidad"] == "Puebla") {
+            document.getElementById("ListaDinámica").innerHTML+=("<li>"+data[i]["nombre"]+ " "+ data[i]["apellidoPaterno"]+ " "+ data[i]["apellidoMaterno"]+ " del Estado de "+ data[i]["entidad"]+ " que representa al (a la) "+ data[i]["distrito_circunscripcion"]+ " que representa a "+ data[i]["partido"]+"</li>");
+            /*if (data[i]["entidad"] == "Puebla") {
                 console.log(data[i]["número"], " ", data[i]["nombre"], " ", data[i]["apellidoPaterno"], " ", data[i]["apellidoMaterno"], " es poblano.");
-            }
+            }*/
+            document.getElementById("InsertarResultados").innerHTML+=("<tr>"+"<td>"+data[i]["número"]+"</td>"+"<td>"+data[i]["nombre"]+" "+data[i]["apellidoPaterno"]+" "+data[i]["apellidoMaterno"]+"</td>"+"<td>"+data[i]["partido"]+"</td>"+"<td>"+data[i]["entidad"]+"</td>"+"<td>"+data[i]["distrito_circunscripcion"]+"</td>");
         }
     }).catch(function (error) {
         //Lógica de error
@@ -29,9 +31,11 @@ function búsquedaPAN() {
         //nombre = document.getElementById("nombre");
         for (var i = 1; i != data.length; i++) {
             console.log("Diputad@ ", data[i]["número"], ".- ", data[i]["nombre"], " ", data[i]["apellidoPaterno"], " ", data[i]["apellidoMaterno"], " del Estado de ", data[i]["entidad"], " que representa al (a la) ", data[i]["distrito_circunscripcion"], "que representa a ", data[i]["partido"]);
-            if (data[i]["entidad"] == "Puebla") {
+            document.getElementById("ListaDinámica").innerHTML+=("<li>"+data[i]["nombre"]+ " "+ data[i]["apellidoPaterno"]+ " "+ data[i]["apellidoMaterno"]+ " del Estado de "+ data[i]["entidad"]+ " que representa al (a la) "+ data[i]["distrito_circunscripcion"]+ " que representa a "+ data[i]["partido"]+"</li>");
+            /*if (data[i]["entidad"] == "Puebla") {
                 console.log(data[i]["número"], " ", data[i]["nombre"], " ", data[i]["apellidoPaterno"], " ", data[i]["apellidoMaterno"], " es poblano.");
-            }
+            }*/
+            document.getElementById("InsertarResultados").innerHTML+=("<tr>"+"<td>"+data[i]["número"]+"</td>"+"<td>"+data[i]["nombre"]+" "+data[i]["apellidoPaterno"]+" "+data[i]["apellidoMaterno"]+"</td>"+"<td>"+data[i]["partido"]+"</td>"+"<td>"+data[i]["entidad"]+"</td>"+"<td>"+data[i]["distrito_circunscripcion"]+"</td>");
         }
     }).catch(function (error) {
         //Lógica de error
@@ -49,9 +53,11 @@ function búsquedaPRI() {
         //nombre = document.getElementById("nombre");
         for (var i = 1; i != data.length; i++) {
             console.log("Diputad@ ", data[i]["número"], ".- ", data[i]["nombre"], " ", data[i]["apellidoPaterno"], " ", data[i]["apellidoMaterno"], " del Estado de ", data[i]["entidad"], " que representa al (a la) ", data[i]["distrito_circunscripcion"], "que representa a ", data[i]["partido"]);
-            if (data[i]["entidad"] == "Puebla") {
+            document.getElementById("ListaDinámica").innerHTML+=("<li>"+data[i]["nombre"]+ " "+ data[i]["apellidoPaterno"]+ " "+ data[i]["apellidoMaterno"]+ " del Estado de "+ data[i]["entidad"]+ " que representa al (a la) "+ data[i]["distrito_circunscripcion"]+ " que representa a "+ data[i]["partido"]+"</li>");
+            /*if (data[i]["entidad"] == "Puebla") {
                 console.log(data[i]["número"], " ", data[i]["nombre"], " ", data[i]["apellidoPaterno"], " ", data[i]["apellidoMaterno"], " es poblano.");
-            }
+            }*/
+            document.getElementById("InsertarResultados").innerHTML+=("<tr>"+"<td>"+data[i]["número"]+"</td>"+"<td>"+data[i]["nombre"]+" "+data[i]["apellidoPaterno"]+" "+data[i]["apellidoMaterno"]+"</td>"+"<td>"+data[i]["partido"]+"</td>"+"<td>"+data[i]["entidad"]+"</td>"+"<td>"+data[i]["distrito_circunscripcion"]+"</td>");
         }
     }).catch(function (error) {
         //Lógica de error
@@ -69,9 +75,11 @@ function búsquedaPVEM() {
         //nombre = document.getElementById("nombre");
         for (var i = 1; i != data.length; i++) {
             console.log("Diputad@ ", data[i]["número"], ".- ", data[i]["nombre"], " ", data[i]["apellidoPaterno"], " ", data[i]["apellidoMaterno"], " del Estado de ", data[i]["entidad"], " que representa al (a la) ", data[i]["distrito_circunscripcion"], "que representa a ", data[i]["partido"]);
-            if (data[i]["entidad"] == "Puebla") {
+            document.getElementById("ListaDinámica").innerHTML+=("<li>"+data[i]["nombre"]+ " "+ data[i]["apellidoPaterno"]+ " "+ data[i]["apellidoMaterno"]+ " del Estado de "+ data[i]["entidad"]+ " que representa al (a la) "+ data[i]["distrito_circunscripcion"]+ " que representa a "+ data[i]["partido"]+"</li>");
+            /*if (data[i]["entidad"] == "Puebla") {
                 console.log(data[i]["número"], " ", data[i]["nombre"], " ", data[i]["apellidoPaterno"], " ", data[i]["apellidoMaterno"], " es poblano.");
-            }
+            }*/
+            document.getElementById("InsertarResultados").innerHTML+=("<tr>"+"<td>"+data[i]["número"]+"</td>"+"<td>"+data[i]["nombre"]+" "+data[i]["apellidoPaterno"]+" "+data[i]["apellidoMaterno"]+"</td>"+"<td>"+data[i]["partido"]+"</td>"+"<td>"+data[i]["entidad"]+"</td>"+"<td>"+data[i]["distrito_circunscripcion"]+"</td>");
         }
     }).catch(function (error) {
         //Lógica de error
@@ -89,9 +97,11 @@ function búsquedaPT() {
         //nombre = document.getElementById("nombre");
         for (var i = 1; i != data.length; i++) {
             console.log("Diputad@ ", data[i]["número"], ".- ", data[i]["nombre"], " ", data[i]["apellidoPaterno"], " ", data[i]["apellidoMaterno"], " del Estado de ", data[i]["entidad"], " que representa al (a la) ", data[i]["distrito_circunscripcion"], "que representa a ", data[i]["partido"]);
-            if (data[i]["entidad"] == "Puebla") {
+            document.getElementById("ListaDinámica").innerHTML+=("<li>"+data[i]["nombre"]+ " "+ data[i]["apellidoPaterno"]+ " "+ data[i]["apellidoMaterno"]+ " del Estado de "+ data[i]["entidad"]+ " que representa al (a la) "+ data[i]["distrito_circunscripcion"]+ " que representa a "+ data[i]["partido"]+"</li>");
+            /*if (data[i]["entidad"] == "Puebla") {
                 console.log(data[i]["número"], " ", data[i]["nombre"], " ", data[i]["apellidoPaterno"], " ", data[i]["apellidoMaterno"], " es poblano.");
-            }
+            }*/
+            document.getElementById("InsertarResultados").innerHTML+=("<tr>"+"<td>"+data[i]["número"]+"</td>"+"<td>"+data[i]["nombre"]+" "+data[i]["apellidoPaterno"]+" "+data[i]["apellidoMaterno"]+"</td>"+"<td>"+data[i]["partido"]+"</td>"+"<td>"+data[i]["entidad"]+"</td>"+"<td>"+data[i]["distrito_circunscripcion"]+"</td>");
         }
     }).catch(function (error) {
         //Lógica de error
@@ -109,9 +119,11 @@ function búsquedaMC() {
         //nombre = document.getElementById("nombre");
         for (var i = 1; i != data.length; i++) {
             console.log("Diputad@ ", data[i]["número"], ".- ", data[i]["nombre"], " ", data[i]["apellidoPaterno"], " ", data[i]["apellidoMaterno"], " del Estado de ", data[i]["entidad"], " que representa al (a la) ", data[i]["distrito_circunscripcion"], "que representa a ", data[i]["partido"]);
-            if (data[i]["entidad"] == "Puebla") {
+            document.getElementById("ListaDinámica").innerHTML+=("<li>"+data[i]["nombre"]+ " "+ data[i]["apellidoPaterno"]+ " "+ data[i]["apellidoMaterno"]+ " del Estado de "+ data[i]["entidad"]+ " que representa al (a la) "+ data[i]["distrito_circunscripcion"]+ " que representa a "+ data[i]["partido"]+"</li>");
+            /*if (data[i]["entidad"] == "Puebla") {
                 console.log(data[i]["número"], " ", data[i]["nombre"], " ", data[i]["apellidoPaterno"], " ", data[i]["apellidoMaterno"], " es poblano.");
-            }
+            }*/
+            document.getElementById("InsertarResultados").innerHTML+=("<tr>"+"<td>"+data[i]["número"]+"</td>"+"<td>"+data[i]["nombre"]+" "+data[i]["apellidoPaterno"]+" "+data[i]["apellidoMaterno"]+"</td>"+"<td>"+data[i]["partido"]+"</td>"+"<td>"+data[i]["entidad"]+"</td>"+"<td>"+data[i]["distrito_circunscripcion"]+"</td>");
         }
     }).catch(function (error) {
         //Lógica de error
@@ -130,9 +142,11 @@ function búsquedaPRD() {
         //nombre = document.getElementById("nombre");
         for (var i = 1; i != data.length; i++) {
             console.log("Diputad@ ", data[i]["número"], ".- ", data[i]["nombre"], " ", data[i]["apellidoPaterno"], " ", data[i]["apellidoMaterno"], " del Estado de ", data[i]["entidad"], " que representa al (a la) ", data[i]["distrito_circunscripcion"], "que representa a ", data[i]["partido"]);
-            if (data[i]["entidad"] == "Puebla") {
+            document.getElementById("ListaDinámica").innerHTML+=("<li>"+data[i]["nombre"]+ " "+ data[i]["apellidoPaterno"]+ " "+ data[i]["apellidoMaterno"]+ " del Estado de "+ data[i]["entidad"]+ " que representa al (a la) "+ data[i]["distrito_circunscripcion"]+ " que representa a "+ data[i]["partido"]+"</li>");
+            /*if (data[i]["entidad"] == "Puebla") {
                 console.log(data[i]["número"], " ", data[i]["nombre"], " ", data[i]["apellidoPaterno"], " ", data[i]["apellidoMaterno"], " es poblano.");
-            }
+            }*/
+            document.getElementById("InsertarResultados").innerHTML+=("<tr>"+"<td>"+data[i]["número"]+"</td>"+"<td>"+data[i]["nombre"]+" "+data[i]["apellidoPaterno"]+" "+data[i]["apellidoMaterno"]+"</td>"+"<td>"+data[i]["partido"]+"</td>"+"<td>"+data[i]["entidad"]+"</td>"+"<td>"+data[i]["distrito_circunscripcion"]+"</td>");
         }
     }).catch(function (error) {
         //Lógica de error
@@ -151,9 +165,11 @@ function búsquedaApartidistas() {
         //nombre = document.getElementById("nombre");
         for (var i = 1; i != data.length; i++) {
             console.log("Diputad@ ", data[i]["número"], ".- ", data[i]["nombre"], " ", data[i]["apellidoPaterno"], " ", data[i]["apellidoMaterno"], " del Estado de ", data[i]["entidad"], " que representa al (a la) ", data[i]["distrito_circunscripcion"], "que representa a ", data[i]["partido"]);
-            if (data[i]["entidad"] == "Puebla") {
+            document.getElementById("ListaDinámica").innerHTML+=("<li>"+data[i]["nombre"]+ " "+ data[i]["apellidoPaterno"]+ " "+ data[i]["apellidoMaterno"]+ " del Estado de "+ data[i]["entidad"]+ " que representa al (a la) "+ data[i]["distrito_circunscripcion"]+ " que representa a "+ data[i]["partido"]+"</li>");
+            /*if (data[i]["entidad"] == "Puebla") {
                 console.log(data[i]["número"], " ", data[i]["nombre"], " ", data[i]["apellidoPaterno"], " ", data[i]["apellidoMaterno"], " es poblano.");
-            }
+            }*/
+            document.getElementById("InsertarResultados").innerHTML+=("<tr>"+"<td>"+data[i]["número"]+"</td>"+"<td>"+data[i]["nombre"]+" "+data[i]["apellidoPaterno"]+" "+data[i]["apellidoMaterno"]+"</td>"+"<td>"+data[i]["partido"]+"</td>"+"<td>"+data[i]["entidad"]+"</td>"+"<td>"+data[i]["distrito_circunscripcion"]+"</td>");
         }
     }).catch(function (error) {
         //Lógica de error
@@ -162,20 +178,36 @@ function búsquedaApartidistas() {
 }
 
 function leerPartido() {
-    var índiceSeleccionadoPartido = document.getElementById("Lista3").selectedIndex;
+    document.getElementById("ListaDinámica").innerHTML=("");
 
-    var posibleTexto = document.getElementById("Lista3").textContent;
-    console.log("La prueba arrojó: '"+x+"'.");
-    document.getElementById("Experimental").innerText("Inner funcional");
     
+    var índiceSeleccionadoPartido;
+
+    //var x = document.getElementById("Lista3").textContent.toString[0]; //No funciona ni en consola
+    //console.log("Imprimir 'x': '"+x+"'.");
+
+    
+    
+    /*¡Éxito!*/ console.log(document.getElementsByTagName("select").Partido.selectedOptions[0].outerText); //Esto en consola devuelve el partido elegido ej.: 'PVEM'
+    nuevaVar=(document.getElementsByTagName("select").Partido.selectedOptions[0].outerText);
+
+    /*¡Éxito!*/ console.log("Hola");
+
     
 
     var stringSeleccionadoPartido = document.getElementById("Lista3").options[document.getElementById("Lista3").selectedIndex].text;
-    console.log(stringSeleccionadoPartido);
+    /*¡Éxito!*/ console.log(stringSeleccionadoPartido); //Esto en consola escribe la devolución del partido elegido ej.: 'PVEM'
 
     var valorSeleccionadoPartido = document.getElementById("Lista3").options[document.getElementById("Lista3").selectedIndex].value;
 
-    switch (stringSeleccionadoPartido) {
+    
+    //índiceSeleccionadoPartido = (document.getElementByTagName("select").Partido.selectedIndex); //No funciona ni en consola
+    /*¡Éxito!*/ console.log("El índice seleccionado es: "+índiceSeleccionadoPartido+", ¡funciona! :D"); //Devuelve undefined
+
+
+    document.getElementById("Experimental").innerHTML=(nuevaVar);
+
+    /*¡Éxito!*/ switch (document.getElementsByTagName("select").Partido.selectedOptions[0].outerText) {
         case "Morena":
             búsquedaMorena();
             break;
@@ -197,10 +229,11 @@ function leerPartido() {
         case "PRD":
             búsquedaPRD();
             break;
-        case "Apartidistas":
+        case "Sin partido":
             búsquedaApartidistas();
             break;
+        default:
+            console.log("Ya casi, el problema es al comparar...");
     }
 }
-leerPartido();
 

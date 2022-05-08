@@ -60,7 +60,8 @@
         border-radius: 10px;
     }
 
-    div li.ElementoDeLista {
+    div ol.Descripción-Artículo li.ElementoDeLista,
+    div ol.Descripción-Artículo#ListaDinámica li {
         font-weight: 200;
         color: whitesmoke;
         font-size: 20px;
@@ -70,8 +71,10 @@
         padding-top: 15px;
         padding-bottom: 10px;
         margin-left: 40px;
-        padding-right: 20px;
+        padding-right: 50px;
+        padding-left: 50px;
     }
+
 
     div .Descripción-Artículo {
         font-weight: 200;
@@ -134,8 +137,31 @@
         margin-right: 25%;
     }
 
+    table#InsertarResultados {
+        width: 100%;
+    }
+
+    #InsertarResultados th,
+    #InsertarResultados tr,
+    #InsertarResultados td {
+        border: 2px solid #07A189;
+        text-align: center;
+        border-radius: 5px;
+    }
+
+    #InsertarResultados td {
+        background-color: #041029;
+        color: whitesmoke;
+    }
+
+    #InsertarResultados th {
+        background-color: #0c38e8;
+    }
+
     div#MostrarDiputados {
         background-color: #07a18a5f;
+        margin-left: 80px;
+        margin-right: 80px;
     }
 
     div#RedesSociales {
@@ -338,6 +364,7 @@
         text-align: center;
         width: 100px;
     }
+
     select#Lista1,
     select#Lista2,
     select#Lista3,
@@ -351,9 +378,11 @@
         margin-left: 25%;
         margin-right: 25%;
     }
+
     table#InsertarResultados {
         width: 100%;
     }
+
     #InsertarResultados th,
     #InsertarResultados tr,
     #InsertarResultados td {
@@ -361,9 +390,11 @@
         text-align: center;
         border-radius: 5px;
     }
+
     #InsertarResultados th {
         background-color: #0c38e8;
     }
+
     div#MostrarDiputados {
         background-color: #07a18a5f;
         margin-left: 80px;
