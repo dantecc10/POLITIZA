@@ -207,16 +207,17 @@ function leerPartido() {
     //var x = document.getElementById("Lista3").textContent.toString[0]; //No funciona ni en consola
     //console.log("Imprimir 'x': '"+x+"'.");
 
-
-
     /*¡Éxito!*/ console.log(document.getElementsByTagName("select").Partido.selectedOptions[0].outerText); //Esto en consola devuelve el partido elegido ej.: 'PVEM'
     nuevaVar = (document.getElementsByTagName("select").Partido.selectedOptions[0].outerText);
     /*¡Éxito!*/ console.log("¡Saludos, terrícola!");
 
-    var stringSeleccionadoPartido = document.getElementById("Lista3").options[document.getElementById("Lista3").selectedIndex].text;
+    var stringSeleccionadoPartido = document.getElementById("Lista1").options[document.getElementById("Lista1").selectedIndex].text;
     /*¡Éxito!*/ console.log(stringSeleccionadoPartido); //Esto en consola escribe la devolución del partido elegido ej.: 'PVEM'
+    var stringSeleccionadoEstado = document.getElementById("Lista2").options[document.getElementById("Lista2").selectedIndex].text;
+    /*¡Éxito!*/ console.log(stringSeleccionadoEstado); //Esto en consola escribe la devolución del partido elegido ej.: 'PVEM'
 
-    var valorSeleccionadoPartido = document.getElementById("Lista3").options[document.getElementById("Lista3").selectedIndex].value;
+
+    var valorSeleccionadoPartido = document.getElementById("Lista1").options[document.getElementById("Lista1").selectedIndex].value;
 
     document.getElementById("Experimental").innerHTML = (nuevaVar);
 

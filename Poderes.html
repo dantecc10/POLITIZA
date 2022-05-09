@@ -55,17 +55,74 @@
             bancadas:</p>
         <script src="JavaScript/JSON-API-2.js"></script>
         <p class="Descripción-Artículo">Partido político:</p>
-        <select name="Partido" id="Lista3" onchange="leerPartido()">
-            <option>Sin filtro</option>
-            <option>Morena</option>
-            <option>PAN</option>
-            <option>PRI</option>
-            <option>PVEM</option>
-            <option>PT</option>
-            <option>MC</option>
-            <option>PRD</option>
-            <option>Sin partido</option>
-        </select>.
+
+        <table id="TablaFiltros">
+            <tr id="Fila1">
+                <th class="EncabezadoCasilla">Activo / Inactivo</th>
+                <th class="EncabezadoNombre">Nombre</th>
+                <th>Filtro</th>
+            </tr>
+            <tr>
+                <td><input type="checkbox" id="FiltroPartido" name="Filtro1" value="FiltraPartidos"></td>
+                <td>Partidos</td>
+                <td>
+                    <select name="Partido" id="Lista1" onchange="leerPartido()">
+                        <option>- - Elija una opción - -</option>
+                        <option>Morena</option>
+                        <option>PAN</option>
+                        <option>PRI</option>
+                        <option>PVEM</option>
+                        <option>PT</option>
+                        <option>MC</option>
+                        <option>PRD</option>
+                        <option>Sin partido</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" id="FiltroEstado" name="Filtro2" value="FiltraEstados"></td>
+                <td>Estados</td>
+                <td>
+                    <select name="Estado" id="Lista2" onchange="leerPartido()">
+                        <option>Aguascalientes</option>
+                        <option>Baja California</option>
+                        <option>Baja California Sur</option>
+                        <option>Campeche</option>
+                        <option>Chiapas</option>
+                        <option>Chihuahua</option>
+                        <option>Ciudad de México</option>
+                        <option>Coahuila</option>
+                        <option>Colima</option>
+                        <option>Durango</option>
+                        <option>Estado de México</option>
+                        <option>Guanajuato</option>
+                        <option>Guerrero</option>
+                        <option>Hidalgo</option>
+                        <option>Jalisco</option>
+                        <option>Michoacán</option>
+                        <option>Morelos</option>
+                        <option>Nayarit</option>
+                        <option>Nuevo León</option>
+                        <option>Oaxaca</option>
+                        <option>Puebla</option>
+                        <option>Querétaro</option>
+                        <option>Quintana Roo</option>
+                        <option>San Luis Potosí</option>
+                        <option>Sinaloa</option>
+                        <option>Sonora</option>
+                        <option>Tabasco</option>
+                        <option>Tamaulipas</option>
+                        <option>Tlaxcala</option>
+                        <option>Veracruz</option>
+                        <option>Yucatán</option>
+                        <option>Zacatecas</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+
+
+
         <hr>
         <table id="InsertarResultados">
         </table>
@@ -142,6 +199,7 @@
         </select>
     </div> -->
         <!--Footer    <div id="FooterDIV">    <footer>        <p>Author: Hege Refsnes</p>        <p><a href="mailto:hege@example.com">hege@example.com</a></p>    </footer>    </div>    -->
+        <p name="Funciona">Dante</p>
         <footer>
             <div id="RedesSociales" align="center">
                 <hr id="AntesSociales">
