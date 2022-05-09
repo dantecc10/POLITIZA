@@ -63,7 +63,8 @@
                 <th>Filtro</th>
             </tr>
             <tr>
-                <td><input type="checkbox" id="FiltroPartido" name="Filtro1" value="FiltraPartidos"></td>
+                <td><input type="checkbox" id="FiltroPartido" name="Filtro1" value="FiltraPartidos"
+                        onclick="comprobarFiltros()"></td>
                 <td>Partidos</td>
                 <td>
                     <select name="Partido" id="Lista1" onchange="leerPartido()">
@@ -80,7 +81,8 @@
                 </td>
             </tr>
             <tr>
-                <td><input type="checkbox" id="FiltroEstado" name="Filtro2" value="FiltraEstados"></td>
+                <td><input type="checkbox" id="FiltroEstado" name="Filtro2" value="FiltraEstados"
+                        onclick="comprobarFiltros()"></td>
                 <td>Estados</td>
                 <td>
                     <select name="Estado" id="Lista2" onchange="leerPartido()">
@@ -116,6 +118,18 @@
                         <option>Veracruz</option>
                         <option>Yucatán</option>
                         <option>Zacatecas</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" id="FiltroDttoCirc" name="Filtro3" value="FiltraDttosCircs"
+                        onclick="comprobarFiltros()"></td>
+                <td>Distritos / <br>Circunscripciones</td>
+                <td>
+                    <select name="Distrito/Circunscripción" id="Lista3" onchange="leerPartido()">
+                        <optgroup>
+                            <option>Zacatecas</option>
+                        </optgroup>
                     </select>
                 </td>
             </tr>
