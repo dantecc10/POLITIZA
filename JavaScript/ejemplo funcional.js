@@ -11,3 +11,9 @@ fetch(url).then(function(response){
     //Lógica de error
     console.log("Error: ", error);
 });
+
+
+
+if (data[i]["entidad"] == "Puebla") {
+    console.log(data[i]["número"], " ", data[i]["nombre"], " ", data[i]["apellidoPaterno"], " ", data[i]["apellidoMaterno"], " es poblano.");
+}
