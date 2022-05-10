@@ -53,7 +53,7 @@
             representándote en la Cámara de Diputados, pero, ¿sabes quién es?, ¿te gustaría ver una lista de los 500
             diputados federales? A continuación te muestro la lista de los 500 diputados federales clasificados por
             bancadas:</p>
-        <script src="../JavaScript/JSON-API-2.js"></script>
+        <script lang="JavaScript" src="../JavaScript/JSON-API-2.js"></script>
         <p class="Descripción-Artículo">Partido político:</p>
 
         <table id="TablaFiltros">
@@ -217,7 +217,7 @@
         <footer>
             <div id="RedesSociales" align="center">
                 <hr id="AntesSociales">
-                <script src="../JavaScript/Redes Sociales.js"></script>
+                <script lang="JavaScript" src="../JavaScript/Redes Sociales.js"></script>
                 <h3><a href="mailto:dantecc10@gmail.com" class="TítuloArtículo" id="ContactoCorreo">Contacto</a></h3>
                 <img class="RedSocial" alt="Ícono de Facebook" id="Facebook" onclick="javascript:AbrirFacebook();"
                     src="../IMG/íconoFacebook.png" />

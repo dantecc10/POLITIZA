@@ -53,7 +53,7 @@
 
     <div id="RedesSociales" align="center">
         <hr id="AntesSociales">
-        <script src="../JavaScript/Redes Sociales.js"></script>
+        <script lang="JavaScript" src="../JavaScript/Redes Sociales.js"></script>
         <h3><a href="mailto:dantecc10@gmail.com" class="TítuloArtículo" id="ContactoCorreo">Contacto</a></h3>
         <img class="RedSocial" alt="Ícono de Facebook" id="Facebook" onclick="javascript:AbrirFacebook();" src="../IMG/íconoFacebook.png"/>
         <img class="RedSocial" alt="Ícono de WhatsApp" id="WhatsApp" onclick="javascript:AbrirWhatsApp();" src="../IMG/íconoWhatsApp.png"/>
