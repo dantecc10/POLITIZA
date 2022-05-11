@@ -1,7 +1,7 @@
 var urlVariable;
 const dttosAguascalientes = 3, dttosBajaCalifornia = 8, dttosBajaCaliforniaSur = 2, dttosCampeche = 2, dttosCDMX = 24, dttosChiapas = 13, dttosChihuahua = 9, dttosCoahuila = 7, dttosColima = 2, dttosDurango = 4, dttosEdoMex = 41, dttosGuanajuato = 15, dttosGuerrero = 9, dttosHidalgo = 7, dttosJalisco = 20, dttosMichoacán = 12, dttosMorelos = 5, dttosNayarit = 3, dttosNuevoLeón = 12, dttosOaxaca = 10, dttosPuebla = 15, dttosQuerétaro = 5, dttosQuintanaRoo = 4, dttosSanLuisPotosí = 7, dttosSinaloa = 7, dttosSonora = 7, dttosTabasco = 6, dttosTamaulipas = 9, dttosTlaxcala = 3, dttosVeracruz = 20, dttosYucatán = 5, dttosZacatecas = 4;
 
-function establecerParámetros(dttosAguascalientes, dttosBajaCalifornia, dttosBajaCaliforniaSur, dttosCampeche, dttosCDMX, dttosChiapas, dttosChihuahua, dttosCoahuila, dttosColima, dttosDurango, dttosEdoMex, dttosGuanajuato, dttosGuerrero, dttosHidalgo, dttosJalisco, dttosMichoacán, dttosMorelos, dttosNayarit, dttosNuevoLeón, dttosOaxaca, dttosPuebla, dttosQuerétaro, dttosQuintanaRoo, dttosSanLuisPotosí, dttosSinaloa, dttosSonora, dttosTabasco, dttosTamaulipas, dttosTlaxcala, dttosVeracruz, dttosYucatán, dttosZacatecas) {
+function establecerParámetros() {
     document.getElementById("ListaDinámica").innerHTML = (""); //Limpia la lista dinámica
 
     /*¡Éxito!*/ console.log(document.getElementsByTagName("select").Partido.selectedOptions[0].outerText); //Esto en consola devuelve el partido elegido ej.: 'PVEM'
@@ -75,7 +75,7 @@ function establecerParámetros(dttosAguascalientes, dttosBajaCalifornia, dttosBa
     }
 }
 
-function másterDiputados(urlVariable) { //Muestra la información a través de la inserción de código para construir tablas
+function másterDiputados(urlVariable, dttosAguascalientes, dttosBajaCalifornia, dttosBajaCaliforniaSur, dttosCampeche, dttosCDMX, dttosChiapas, dttosChihuahua, dttosCoahuila, dttosColima, dttosDurango, dttosEdoMex, dttosGuanajuato, dttosGuerrero, dttosHidalgo, dttosJalisco, dttosMichoacán, dttosMorelos, dttosNayarit, dttosNuevoLeón, dttosOaxaca, dttosPuebla, dttosQuerétaro, dttosQuintanaRoo, dttosSanLuisPotosí, dttosSinaloa, dttosSonora, dttosTabasco, dttosTamaulipas, dttosTlaxcala, dttosVeracruz, dttosYucatán, dttosZacatecas) { //Muestra la información a través de la inserción de código para construir tablas
     var stringSeleccionadoEstado = document.getElementById("Lista2").options[document.getElementById("Lista2").selectedIndex].text;
     /*¡Éxito!*/ // Línea temporal de depuración: // console.log(stringSeleccionadoEstado); //Esto en consola escribe la devolución del estado elegido ej.: 'Aguascalientes'
     fetch(urlVariable).then(function (response) {
@@ -83,30 +83,28 @@ function másterDiputados(urlVariable) { //Muestra la información a través de 
         return response.json();
     }).then(function (data) {
         //Lógica de éxito con JSON
+
         document.getElementById("InsertarResultados").innerHTML = ("<tr><th>Número</th><th>Nombre completo</th><th>Partido</th><th>Entidad</th><th>Distrito o <br>Circunscripción</th></tr>");
         var contador = 0;
-
         if (document.getElementById("FiltroEstado").checked == true) { //Si el filtro de Estados está activado
             console.log("El filtro de estados fue activado.");
-            var SelecciónEstado = (document.getElementsByTagName("select").Partido.selectedOptions[0].outerText);
-            document.getElementById("Experimental").innerHTML += (", " + SelecciónEstado);
+            var SelecciónEstado = (document.getElementsByTagName("select").Estado.selectedOptions[0].outerText);
+            document.getElementById("Experimental").innerHTML += (", " + SelecciónEstado + ".");
 
             switch (stringSeleccionadoEstado) { /*¡Éxito!*/
-            case "Morena":
-                //búsquedaMorena();
-                urlVariable = "https://raw.githubusercontent.com/dantecc10/API-POLITIZA/master/DiputadosMorena.json";
-                másterDiputados(urlVariable);
-                break;
-            default:
-                document.getElementById("InsertarResultados").innerHTML = ("");
-                console.error("Error fatal");
-        }
+                case "Aguascalientes":
+                    console.log(stringSeleccionadoEstado);
+                    for (var inserciónDC = 0; inserciónDC = dttosAguascalientes; inserciónDC++) {
+                        document.getElementById("GrupoDistritos").innerHTML = ("<option>"+inserciónDC+"</option>");
+                    }
+                    break;
+                default:
+                    document.getElementById("InsertarResultados").innerHTML = ("");
+                    console.error("Error fatal");
+            }
         }
         else {
 
-
-
-            
             console.log("El filtro de Estados está inactivo o es ilegible.");
             document.getElementById("GrupoDistritos").innerHTML = ("");
         }
