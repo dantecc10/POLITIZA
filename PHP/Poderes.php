@@ -67,7 +67,7 @@
                         onclick="comprobarFiltros()"></td>
                 <td>Partidos</td>
                 <td>
-                    <select name="Partido" id="Lista1" onchange="leerPartido()">
+                    <select name="Partido" id="Lista1" onchange="generaResultados()">
                         <option>- - Elija una opción - -</option>
                         <option>Morena</option>
                         <option>PAN</option>
@@ -85,7 +85,7 @@
                         onclick="comprobarFiltros()"></td>
                 <td>Estados</td>
                 <td>
-                    <select name="Estado" id="Lista2" onchange="leerPartido()">
+                    <select name="Estado" id="Lista2" onchange="generaResultados()">
                         <option>Aguascalientes</option>
                         <option>Baja California</option>
                         <option>Baja California Sur</option>
@@ -126,7 +126,7 @@
                         onclick="comprobarFiltros()"></td>
                 <td>Distritos / <br>Circunscripciones</td>
                 <td>
-                    <select name="Distrito/Circunscripción" id="Lista3" onchange="leerPartido()">
+                    <select name="Distrito/Circunscripción" id="Lista3" onchange="generaResultados()">
                         <optgroup>
                             <option>Zacatecas</option>
                         </optgroup>
