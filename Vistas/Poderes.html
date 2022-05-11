@@ -67,7 +67,7 @@
                         onclick="comprobarFiltros()"></td>
                 <td>Partidos</td>
                 <td>
-                    <select name="Partido" id="Lista1" onchange="generaResultados()">
+                    <select name="Partido" id="Lista1" onchange="estableceParámetros()">
                         <option>Sin filtro</option>
                         <option>Morena</option>
                         <option>PAN</option>
@@ -85,7 +85,7 @@
                         onclick="comprobarFiltros()"></td>
                 <td>Estados</td>
                 <td>
-                    <select name="Estado" id="Lista2" onchange="generaResultados()">
+                    <select name="Estado" id="Lista2" onchange="estableceParámetros()">
                         <option>Sin filtro</option>
                         <option>Aguascalientes</option>
                         <option>Baja California</option>
@@ -127,7 +127,7 @@
                         onclick="comprobarFiltros()"></td>
                 <td>Distritos / <br>Circunscripciones</td>
                 <td>
-                    <select name="Distrito/Circunscripción" id="Lista3" onload="generaResultados()" onchange="generaResultados()">
+                    <select name="Distrito/Circunscripción" id="Lista3" onload="estableceParámetros()" onchange="estableceParámetros()">
                         <option>Sin filtro</option>
                         <optgroup id="GrupoDistritos">
                             <!--Insertar filas y celdas con opciones de distritos-->

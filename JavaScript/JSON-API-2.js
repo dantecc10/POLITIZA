@@ -38,7 +38,6 @@ function comprobarFiltros() {
 
         console.log("El filtro de estados fue activado.");
         //document.getElementById("GrupoDistritos").innerHTML += ("<option");
-        leer
     }
     else {
         console.log("Hubo un error al leer la casilla de estados, o está desactivado.");
@@ -53,8 +52,7 @@ function comprobarFiltros() {
     }
 }
 
-
-function generaResultados() {
+function estableceParámetros() {
     document.getElementById("ListaDinámica").innerHTML = (""); //Limpia la lista dinámica
     var urlVariable;
     var índiceSeleccionadoPartido;
@@ -120,78 +118,5 @@ function generaResultados() {
             break;
         default:
             document.getElementById("InsertarResultados").innerHTML = ("");
-    }
-}
-
-function leerEstado() {
-    document.getElementById("ListaDinámica").innerHTML = ("");
-    var urlVariable;
-    var índiceSeleccionadoPartido;
-
-    //var x = document.getElementById("Lista3").textContent.toString[0]; //No funciona ni en consola
-    //console.log("Imprimir 'x': '"+x+"'.");
-
-    /*¡Éxito!*/ console.log(document.getElementsByTagName("select").Partido.selectedOptions[0].outerText); //Esto en consola devuelve el partido elegido ej.: 'PVEM'
-    nuevaVar = (document.getElementsByTagName("select").Partido.selectedOptions[0].outerText);
-    /*¡Éxito!*/ console.log("¡Saludos, terrícola!");
-
-    var stringSeleccionadoPartido = document.getElementById("Lista1").options[document.getElementById("Lista1").selectedIndex].text;
-    /*¡Éxito!*/ console.log(stringSeleccionadoPartido); //Esto en consola escribe la devolución del partido elegido ej.: 'PVEM'
-    var stringSeleccionadoEstado = document.getElementById("Lista2").options[document.getElementById("Lista2").selectedIndex].text;
-    /*¡Éxito!*/ console.log(stringSeleccionadoEstado); //Esto en consola escribe la devolución del partido elegido ej.: 'PVEM'
-
-
-    var valorSeleccionadoPartido = document.getElementById("Lista1").options[document.getElementById("Lista1").selectedIndex].value;
-
-    document.getElementById("Experimental").innerHTML = (nuevaVar);
-
-    switch (stringSeleccionadoPartido) { /*¡Éxito!*/
-        case "Morena":
-            //búsquedaMorena();
-            urlVariable = "https://raw.githubusercontent.com/dantecc10/API-POLITIZA/master/DiputadosMorena.json";
-            másterDiputados(urlVariable);
-            break;
-        case "PAN":
-            //búsquedaPAN();
-            urlVariable = "https://raw.githubusercontent.com/dantecc10/API-POLITIZA/master/DiputadosPAN.json";
-            másterDiputados(urlVariable);
-            break;
-        case "PRI":
-            //búsquedaPRI();
-            urlVariable = "https://raw.githubusercontent.com/dantecc10/API-POLITIZA/master/DiputadosPRI.json";
-            másterDiputados(urlVariable);
-            break;
-        case "PVEM":
-            //búsquedaPVEM();
-            urlVariable = "https://raw.githubusercontent.com/dantecc10/API-POLITIZA/master/DiputadosPVEM.json";
-            másterDiputados(urlVariable);
-            break;
-        case "PT":
-            //búsquedaPT();
-            urlVariable = "https://raw.githubusercontent.com/dantecc10/API-POLITIZA/master/DiputadosPT.json";
-            másterDiputados(urlVariable);
-            break;
-        case "MC":
-            //búsquedaMC();
-            urlVariable = "https://raw.githubusercontent.com/dantecc10/API-POLITIZA/master/DiputadosMC.json";
-            másterDiputados(urlVariable);
-            break;
-        case "PRD":
-            //búsquedaPRD();
-            urlVariable = "https://raw.githubusercontent.com/dantecc10/API-POLITIZA/master/DiputadosPRD.json";
-            másterDiputados(urlVariable);
-            break;
-            case "Sin partido":
-                //búsquedaApartidistas();
-                urlVariable = "https://raw.githubusercontent.com/dantecc10/API-POLITIZA/master/DiputadosApartidistas.json";
-                másterDiputados(urlVariable);
-                break;
-            case "Sin filtro":
-                //búsquedaApartidistas();
-                urlVariable = "https://raw.githubusercontent.com/dantecc10/API-POLITIZA/master/DiputadosGlobal.json";
-                másterDiputados(urlVariable);
-                break;
-            default:
-                document.getElementById("InsertarResultados").innerHTML = ("");
     }
 }
