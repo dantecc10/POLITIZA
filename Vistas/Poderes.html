@@ -64,10 +64,10 @@
             </tr>
             <tr>
                 <td><input type="checkbox" id="FiltroPartido" name="Filtro1" value="FiltraPartidos"
-                        onclick="comprobarFiltros()"></td>
+                        onclick="establecerParámetros()"></td>
                 <td>Partidos</td>
                 <td>
-                    <select name="Partido" id="Lista1" onchange="estableceParámetros()">
+                    <select name="Partido" id="Lista1" onchange="establecerParámetros()">
                         <option>Sin filtro</option>
                         <option>Morena</option>
                         <option>PAN</option>
@@ -82,10 +82,10 @@
             </tr>
             <tr>
                 <td><input type="checkbox" id="FiltroEstado" name="Filtro2" value="FiltraEstados"
-                        onclick="comprobarFiltros()"></td>
+                        onclick="establecerParámetros"></td>
                 <td>Estados</td>
                 <td>
-                    <select name="Estado" id="Lista2" onchange="estableceParámetros()">
+                    <select name="Estado" id="Lista2" onchange="establecerParámetros()">
                         <option>Sin filtro</option>
                         <option>Aguascalientes</option>
                         <option>Baja California</option>
@@ -124,10 +124,10 @@
             </tr>
             <tr>
                 <td><input type="checkbox" id="FiltroDttoCirc" name="Filtro3" value="FiltraDttosCircs"
-                        onclick="comprobarFiltros()"></td>
+                        onclick="establecerParámetros"></td>
                 <td>Distritos / <br>Circunscripciones</td>
                 <td>
-                    <select name="Distrito/Circunscripción" id="Lista3" onload="estableceParámetros()" onchange="estableceParámetros()">
+                    <select name="Distrito/Circunscripción" id="Lista3" onload="establecerParámetros()" onchange="establecerParámetros()">
                         <option>Sin filtro</option>
                         <optgroup id="GrupoDistritos">
                             <!--Insertar filas y celdas con opciones de distritos-->
