@@ -4,15 +4,15 @@
     {
     #copyright {
         text-align: center;
-        color: whitesmoke;
+        color: #2e6583;
         text-decoration: dotted;
     }
-    
+
     h2#IndicaArtículos {
         color: #07A189;
         text-align: justify;
         font-size: 25px;
-        background-color: #0C37E832;
+        background-color: #004483;
         padding: 5px;
         text-indent: 50px;
     }
@@ -30,7 +30,7 @@
         color: #07A189;
         text-align: center;
         font-size: 25px;
-        background-color: #0C37E832;
+        background-color: #004483;
         padding: 10px;
         border-radius: 15px;
     }
@@ -39,7 +39,7 @@
         color: #07A189;
         text-align: center;
         font-size: 25px;
-        background-color: #0C37E832;
+        background-color: #004483;
         padding: 5px;
         border-radius: 15px;
         width: 50%;
@@ -55,7 +55,7 @@
         color: #60dbf1;
         text-align: center;
         font-size: 20px;
-        background-color: #0C37E832;
+        background-color: #004483;
         padding: 5px;
         border-radius: 10px;
     }
@@ -81,7 +81,7 @@
         color: whitesmoke;
         font-size: 20px;
         text-align: justify;
-        background-color: #07a18a5f;
+        background-color: #0289c0;
         border-radius: 25px;
         text-indent: 20px;
         padding-top: 15px;
@@ -105,7 +105,6 @@
     }
 
     div#ContenedorListas {
-        background-color: #07a18a5f;
         padding: 10px;
         border-radius: 25px;
         height: 500px;
@@ -129,7 +128,7 @@
     select#Lista4 {
         text-align: center;
         color: #07A189;
-        background-color: #0c38e8;
+        background-color: #dee8f1;
         width: 50%;
         font-size: 20px;
         border-radius: 20px;
@@ -167,31 +166,31 @@
 
     #TablaFiltros td,
     #InsertarResultados td {
-        background-color: #041029;
+        background-color: #004483;
         color: whitesmoke;
     }
 
     #InsertarResultados th,
     #TablaFiltros th {
-        background-color: #0c38e8;
+        background-color: #0289c0;
+        color: #011c4b;
     }
 
     .EncabezadoCasilla {
         width: 15%;
     }
-    tr
-    {
+
+    tr {
         font-size: 20px;
         height: 30px;
     }
-    tr#Fila1
-    {
+
+    tr#Fila1 {
         height: 40px;
         font-size: 20px;
     }
 
     div#MostrarDiputados {
-        background-color: #07a18a5f;
         margin-left: 80px;
         margin-right: 80px;
     }
@@ -279,7 +278,7 @@
         color: #07A189;
         text-align: justify;
         font-size: 25px;
-        background-color: #0C37E832;
+        background-color: #004483;
         padding: 5px;
         text-indent: 50px;
     }
@@ -307,7 +306,7 @@
         color: #07A189;
         text-align: center;
         font-size: 25px;
-        background-color: #0C37E832;
+        background-color: #004483;
         padding: 10px;
         border-radius: 15px;
     }
@@ -316,7 +315,7 @@
         color: #07A189;
         text-align: center;
         font-size: 25px;
-        background-color: #0C37E832;
+        background-color: #004483;
         padding: 5px;
         border-radius: 15px;
         width: 50%;
@@ -332,7 +331,7 @@
         color: #60dbf1;
         text-align: center;
         font-size: 20px;
-        background-color: #0C37E832;
+        background-color: #004483;
         padding: 5px;
         border-radius: 10px;
     }
@@ -357,7 +356,7 @@
         color: whitesmoke;
         font-size: 20px;
         text-align: justify;
-        background-color: #07a18a5f;
+        background-color: #0289c0;
         border-radius: 25px;
         text-indent: 20px;
         padding-top: 15px;
@@ -381,7 +380,6 @@
     }
 
     div#ContenedorListas {
-        background-color: #07a18a5f;
         padding: 10px;
         border-radius: 25px;
         height: 500px;
@@ -405,7 +403,7 @@
     select#Lista4 {
         text-align: center;
         color: #07A189;
-        background-color: #0c38e8;
+        background-color: #dee8f1;
         width: 50%;
         font-size: 20px;
         border-radius: 20px;
@@ -443,38 +441,38 @@
 
     #TablaFiltros td,
     #InsertarResultados td {
-        background-color: #041029;
+        background-color: #004483;
         color: whitesmoke;
     }
 
     #InsertarResultados th,
     #TablaFiltros th {
         background-color: #0c38e8;
+        color: #011c4b;
     }
 
     .EncabezadoCasilla {
         width: 15%;
     }
-    tr
-    {
+
+    tr {
         font-size: 20px;
         height: 30px;
     }
-    tr#Fila1
-    {
+
+    tr#Fila1 {
         height: 40px;
         font-size: 20px;
     }
 
     div#MostrarDiputados {
-        background-color: #07a18a5f;
         margin-left: 80px;
         margin-right: 80px;
     }
 
     #copyright {
         text-align: center;
-        color: whitesmoke;
+        color: #2e6583;
         text-decoration: dotted;
     }
 
@@ -553,11 +551,17 @@
 
 /*Punto de ruptura para móviles*/
     {
+    #copyright {
+        text-align: center;
+        color: #2e6583;
+        text-decoration: dotted;
+    }
+
     h2#IndicaArtículos {
         color: #07A189;
         text-align: justify;
         font-size: 25px;
-        background-color: #0C37E832;
+        background-color: #004483;
         padding: 5px;
         text-indent: 50px;
     }
@@ -580,7 +584,7 @@
         color: #07A189;
         text-align: center;
         font-size: 25px;
-        background-color: #0C37E832;
+        background-color: #004483;
         padding: 10px;
         border-radius: 15px;
     }
@@ -589,7 +593,7 @@
         color: #07A189;
         text-align: center;
         font-size: 25px;
-        background-color: #0C37E832;
+        background-color: #004483;
         padding: 5px;
         border-radius: 15px;
         width: 50%;
@@ -605,7 +609,7 @@
         color: #60dbf1;
         text-align: center;
         font-size: 20px;
-        background-color: #0C37E832;
+        background-color: #004483;
         padding: 5px;
         border-radius: 10px;
     }
@@ -628,7 +632,7 @@
         color: whitesmoke;
         font-size: 20px;
         text-align: justify;
-        background-color: #07a18a5f;
+        background-color: #0289c0;
         border-radius: 25px;
         text-indent: 20px;
         padding-top: 15px;
@@ -663,7 +667,6 @@
     }
 
     div#ContenedorListas {
-        background-color: #07a18a5f;
         padding: 10px;
         border-radius: 25px;
         height: 500px;
@@ -687,16 +690,68 @@
     select#Lista4 {
         text-align: center;
         color: #07A189;
-        background-color: #0c38e8;
+        background-color: #dee8f1;
         width: 50%;
         font-size: 20px;
+        border-radius: 20px;
+        border: 2px groove white;
 
         margin-left: 25%;
         margin-right: 25%;
     }
 
+    select#Lista1:hover,
+    select#Lista2:hover,
+    select#Lista3:hover,
+    select#Lista4:hover {
+        border: 2px double whitesmoke;
+        color: #0c38e8;
+        background-color: #07A189;
+    }
+
+    table#InsertarResultados,
+    table#TablaFiltros {
+        width: 100%;
+    }
+
+    #InsertarResultados th,
+    #InsertarResultados tr,
+    #InsertarResultados td,
+    #TablaFiltros th,
+    #TablaFiltros tr,
+    #TablaFiltros td {
+        border: 2px solid #07A189;
+        text-align: center;
+        border-radius: 5px;
+    }
+
+    #TablaFiltros td,
+    #InsertarResultados td {
+        background-color: #004483;
+        color: whitesmoke;
+    }
+
+    #InsertarResultados th,
+    #TablaFiltros th {
+        background-color: #0289c0;
+        color: #011c4b;
+    }
+
+    .EncabezadoCasilla {
+        width: 15%;
+    }
+
+    tr {
+        font-size: 20px;
+        height: 30px;
+    }
+
+    tr#Fila1 {
+        height: 40px;
+        font-size: 20px;
+    }
+
     div#MostrarDiputados {
-        background-color: #07a18a5f;
         margin-left: 80px;
         margin-right: 80px;
     }

@@ -1,0 +1,15 @@
+@media (prefers-color-scheme: dark) {
+    @import url("CuerpoEstilo.css");
+    @import url("MenúDesplegable.css");
+    @import url("NavBar.css");
+}
+
+@media (prefers-color-scheme: light) {
+    @import url("TEMA CLARO/CuerpoEstilo.css");
+    @import url("TEMA CLARO/MenúDesplegable.css");
+    @import url("TEMA CLARO/NavBar.css");
+}
+
+@import url("CuerpoEstilo.css");
+@import url("MenúDesplegable.css");
+@import url("NavBar.css");
