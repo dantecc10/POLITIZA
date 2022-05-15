@@ -3,7 +3,7 @@
 
 <head>
     <link rel="shortcut icon" href="IMG/FAVICON TRANSPARENTE.png" type="image/x-icon">
-    <link rel=StyleSheet href="../CSS/CSS GLOBAL.css" Type="text/css" MEDIA="screen">
+    <link rel="Stylesheet" href="../CSS/CSS GLOBAL.css" Type="text/css" MEDIA="screen">
     <meta name="description" content="Política mexicana">
     <meta name="author" content="Dante Castelán Carpinteyro">
     <meta charset="UTF-8">

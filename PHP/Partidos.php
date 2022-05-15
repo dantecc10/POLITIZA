@@ -3,7 +3,7 @@
 
 <head>
     <link rel="shortcut icon" href="IMG/FAVICON TRANSPARENTE.png" type="image/x-icon">
-    <link rel=StyleSheet href="../CSS/CSS GLOBAL.css" Type="text/css" MEDIA="screen">
+    <link rel="Stylesheet" href="../CSS/CSS GLOBAL.css" Type="text/css" MEDIA="screen">
     <meta name="keywords"
         content="Política, mexicana, Patria, México, juventud, elecciones, democracia, partidos, políticos, gobierno, 4T, Cuarta Transformación, PRI, PAN, PRD, MC, PT, PVEM">
     <meta name="description" content="Política mexicana">
