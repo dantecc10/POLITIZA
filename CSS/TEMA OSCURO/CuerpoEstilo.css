@@ -7,7 +7,7 @@
         color: whitesmoke;
         text-decoration: dotted;
     }
-    
+
     h2#IndicaArtículos {
         color: #07A189;
         text-align: justify;
@@ -95,8 +95,7 @@
     img.LogoPartidista {
         height: 100px;
         border-radius: 25px;
-        margin-right: 15px;
-        margin-bottom: 15px;
+        margin: 15px;
     }
 
     img.LogoPartidista#LogoPRI {
@@ -104,8 +103,12 @@
         border-radius: 60px;
     }
 
+    img.LogoPartidista#LogoPVEM {
+        background-color: lightgreen;
+        border-radius: 15px;
+    }
+
     div#ContenedorListas {
-        background-color: #07a18a5f;
         padding: 10px;
         border-radius: 25px;
         height: 500px;
@@ -179,13 +182,13 @@
     .EncabezadoCasilla {
         width: 15%;
     }
-    tr
-    {
+
+    tr {
         font-size: 20px;
         height: 30px;
     }
-    tr#Fila1
-    {
+
+    tr#Fila1 {
         height: 40px;
         font-size: 20px;
     }
@@ -455,13 +458,13 @@
     .EncabezadoCasilla {
         width: 15%;
     }
-    tr
-    {
+
+    tr {
         font-size: 20px;
         height: 30px;
     }
-    tr#Fila1
-    {
+
+    tr#Fila1 {
         height: 40px;
         font-size: 20px;
     }

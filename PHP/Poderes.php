@@ -1,20 +1,10 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <link rel="shortcut icon" href="IMG/FAVICON TRANSPARENTE.png" type="image/x-icon">
-    <link rel="Stylesheet" href="../CSS/CSS GLOBAL.css" Type="text/css" MEDIA="screen">
-    <meta name="description" content="Política mexicana">
-    <meta name="author" content="Dante Castelán Carpinteyro">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Politiza MX: La política es de todos</title>
+<head><link rel="shortcut icon" href="IMG/FAVICON TRANSPARENTE.png" type="image/x-icon"><link rel="Stylesheet" href="../CSS/CSS GLOBAL.css" Type="text/css" MEDIA="screen"><meta name="description" content="Política mexicana"><meta name="author" content="Dante Castelán Carpinteyro"><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Politiza MX: La política es de todos</title>
 </head>
 
-<body>
-    <!--Encabezado (no mover)--> <br>
-    <header id="Encabezado">
+<body><!--Encabezado (no mover)--> <br><header id="Encabezado">
         <div id="Contenedor-Encabezado">
             <div id="Contenido-Encabezado">
                 <h1>Politiza MX</h1> <a href="index.html"> <img id="Logo" src="../IMG/FAVICON.PNG" alt="Logo POLITIZA MX">
@@ -29,12 +19,7 @@
             </div>
         </div>
         <div id="Encabezado-Superior"></div>
-        <div id="Encabezado-Inferior"></div>
-    </header>
-    <!--Termina NavBar-->
-    <!--Contenido-->
-    <h2 id="IndicaArtículos">División de poderes</h2>
-    <div class="Contenedor-Artículos" id="PartidosPolíticos">
+        <div id="Encabezado-Inferior"></div></header><!--Termina NavBar--><!--Contenido--><h2 id="IndicaArtículos">División de poderes</h2><div class="Contenedor-Artículos" id="PartidosPolíticos">
         <h4 class="Autor-Artículo">Por Dante Castelán Carpinteyro.</h4>
         <h3 class="TítuloArtículo">¿Cuáles son los poderes?</h3>
         <p class="Descripción-Artículo">El Supremo Poder de la Federación se divide en los tres siguientes:</p>
@@ -208,8 +193,7 @@
         <p class="Descripción-Artículo">Nombre de los diputados:</p>
         <select name="NombresDiputados" id="Lista4">
             <option></option>
-        </select>
-    </div> -->
+        </select></div> -->
         <!--Footer    <div id="FooterDIV">    <footer>        <p>Author: Hege Refsnes</p>        <p><a href="mailto:hege@example.com">hege@example.com</a></p>    </footer>    </div>    -->
         <p name="Funciona">Dante</p>
         <footer>
