@@ -194,7 +194,7 @@
         <select name="NombresDiputados" id="Lista4">
             <option></option>
         </select></div> -->
-        <!--Footer    <div id="FooterDIV">    <footer>        <p>Author: Hege Refsnes</p>        <p><a href="mailto:hege@example.com">hege@example.com</a></p>    </footer>    </div>    -->
+        
         <p name="Funciona">Dante</p>
         <footer>
             <div id="RedesSociales" align="center">

@@ -36,7 +36,7 @@
 	</header>
 	<!--Termina NavBar-->
 	<!--Contenido-->
-	<!--Footer    <div id="FooterDIV">    <footer>        <p>Author: Hege Refsnes</p>        <p><a href="mailto:hege@example.com">hege@example.com</a></p>    </footer>    </div>    -->
+	
 	<footer>
 		<div id="RedesSociales" align="center">
 			<hr id="AntesSociales">

@@ -19,9 +19,9 @@
             </div>
         </div>
         <div id="Encabezado-Superior"></div>
-        <div id="Encabezado-Inferior"></div></header><!--Termina NavBar--><!--Contenido--><!--Footer    <div id="FooterDIV">    <footer>        <p>Author: Hege Refsnes</p>        <p><a href="mailto:hege@example.com">hege@example.com</a></p>    </footer>    </div>    --><div id="RedesSociales" align="center">
+        <div id="Encabezado-Inferior"></div></header><!--Termina NavBar--><!--Contenido--><div id="RedesSociales" align="center">
         <hr id="AntesSociales">
-        <script lang="JavaScript" src="/JavaScript/Redes Sociales.js"></script>
+        <script lang="JavaScript" src="../JavaScript/Redes Sociales.js"></script>
         <h3><a href="mailto:dantecc10@gmail.com" class="TítuloArtículo" id="ContactoCorreo">Contacto</a></h3> <img
             class="RedSocial" alt="Ícono de Facebook" onclick="javascript:AbrirFacebook();"
             src="../IMG/íconoFacebook.png" /> <img class="RedSocial" alt="Ícono de WhatsApp"
