@@ -1,5 +1,4 @@
-var activaciónFiltroDttos = (document.getElementById("FiltroDttos").cheked);
-while(activaciónFiltroDttos = false)
+while(document.getElementById("FiltroDttoCirc").cheked == false)
 {
     document.getElementById("Lista3").disabled = true;
 }
