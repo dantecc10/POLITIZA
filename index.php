@@ -4,7 +4,7 @@
 <link rel="shortcut icon" href="IMG/FAVICON TRANSPARENTE.png" type="image/x-icon">
     <link rel="Stylesheet" href="../CSS/CSS GLOBAL.css" Type="text/css" MEDIA="screen">
     <meta name="keywords" content="Política, mexicana, Patria, México, juventud, elecciones, democracia, partidos, políticos, gobierno, 4T, Cuarta Transformación">
-    <meta name="description" content="Política mexicana">
+    
     <meta name="author" content="Dante Castelán Carpinteyro">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
