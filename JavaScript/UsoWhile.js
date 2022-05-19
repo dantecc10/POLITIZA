@@ -1,4 +1,11 @@
-while(document.getElementById("FiltroDttoCirc").cheked == false)
-{
-    document.getElementById("Lista3").disabled = true;
+var contadorWhile;
+function añadirOpcionesEstados() {
+    while (contadorWhile <= 32) {
+        switch (contadorWhile) {
+
+        }
+
+
+        contadorWhile++;
+    }
 }
