@@ -1,20 +1,14 @@
 var urlVariable, datoEstado;
 const dttosAguascalientes = 3, dttosBajaCalifornia = 8, dttosBajaCaliforniaSur = 2, dttosCampeche = 2, dttosCDMX = 24, dttosChiapas = 13, dttosChihuahua = 9, dttosCoahuila = 7, dttosColima = 2, dttosDurango = 4, dttosEdoMex = 41, dttosGuanajuato = 15, dttosGuerrero = 9, dttosHidalgo = 7, dttosJalisco = 20, dttosMichoacán = 12, dttosMorelos = 5, dttosNayarit = 3, dttosNuevoLeón = 12, dttosOaxaca = 10, dttosPuebla = 15, dttosQuerétaro = 5, dttosQuintanaRoo = 4, dttosSanLuisPotosí = 7, dttosSinaloa = 7, dttosSonora = 7, dttosTabasco = 6, dttosTamaulipas = 9, dttosTlaxcala = 3, dttosVeracruz = 20, dttosYucatán = 5, dttosZacatecas = 4;
-
 function establecerParámetros(dttosAguascalientes, dttosBajaCalifornia, dttosBajaCaliforniaSur, dttosCampeche, dttosCDMX, dttosChiapas, dttosChihuahua, dttosCoahuila, dttosColima, dttosDurango, dttosEdoMex, dttosGuanajuato, dttosGuerrero, dttosHidalgo, dttosJalisco, dttosMichoacán, dttosMorelos, dttosNayarit, dttosNuevoLeón, dttosOaxaca, dttosPuebla, dttosQuerétaro, dttosQuintanaRoo, dttosSanLuisPotosí, dttosSinaloa, dttosSonora, dttosTabasco, dttosTamaulipas, dttosTlaxcala, dttosVeracruz, dttosYucatán, dttosZacatecas) {
     document.getElementById("ListaDinámica").innerHTML = (""); //Limpia la lista dinámica
-
     /*¡Éxito!*/ console.log(document.getElementsByTagName("select").Partido.selectedOptions[0].outerText); //Esto en consola devuelve el partido elegido ej.: 'PVEM'
-
     /*¡Éxito!*/ console.log("¡Saludos, terrícola!");
-
     var stringSeleccionadoPartido = document.getElementById("Lista1").options[document.getElementById("Lista1").selectedIndex].text;
     /*¡Éxito!*/ // Línea temporal de depuración: // console.log(stringSeleccionadoPartido); //Esto en consola escribe la devolución del partido elegido ej.: 'PVEM'
-
     console.log(document.getElementById("Lista2").options[document.getElementById("Lista2").selectedIndex].text);
     var SelecciónPartido = (document.getElementsByTagName("select").Partido.selectedOptions[0].outerText);
     var stringSeleccionadoEstado = document.getElementById("Lista2").options[document.getElementById("Lista2").selectedIndex].text;
-
     if (document.getElementById("FiltroPartido").checked == true) {
         console.log("El filtro de partidos fue activado.");
         document.getElementById("Experimental").innerHTML = (SelecciónPartido);
@@ -493,7 +487,6 @@ function establecerParámetros(dttosAguascalientes, dttosBajaCalifornia, dttosBa
         }
     }
 }
-
 function másterDiputados(urlVariable, datoEstado) { //Muestra la información a través de la inserción de código para construir tablas
 
     /*¡Éxito!*/ // Línea temporal de depuración: // console.log(stringSeleccionadoEstado); //Esto en consola escribe la devolución del estado elegido ej.: 'Aguascalientes'
@@ -527,10 +520,6 @@ function másterDiputados(urlVariable, datoEstado) { //Muestra la información a
             }
             document.getElementById("Experimental").innerHTML += (" (" + contador + " diputados):");
         }
-
-
-
-
     }).catch(function (error) {
         //Lógica de error
         console.log("Error: ", error);
@@ -538,7 +527,6 @@ function másterDiputados(urlVariable, datoEstado) { //Muestra la información a
     urlVariable = "";
 
     //Comprobación de verificación de casilla para filtro de partidos
-
     if (document.getElementById("FiltroDttoCirc").checked == true) {
         console.log("El filtro de distritos/circunscripciones fue activado.");
     }
@@ -556,8 +544,6 @@ function agregaOpcionesDttos(localDttos, localCircs) {
     else {
         document.getElementById("GrupoDistritos").innerHTML = "";
     }
-
-
     document.getElementById("GrupoCircunscripciones").innerHTML = "";
     for (var l = 1; l = localCircs; l++) {
         document.getElementById("Circunscripciones").innerHTML += ("<option>Circunscripción " + l + "</option>");
