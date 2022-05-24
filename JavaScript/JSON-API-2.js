@@ -51,7 +51,7 @@ function establecerParámetros(dttosAguascalientes, dttosBajaCalifornia, dttosBa
                 break;
             default:
                 document.getElementById("InsertarResultados").innerHTML = ("");
-                console.error("Error fatal");
+                console.log("Error fatal");
         }
         if (document.getElementById("FiltroEstado").checked == true) { //Si el filtro de Estados está activado
             console.log("El filtro de estados fue activado.");
@@ -257,7 +257,7 @@ function establecerParámetros(dttosAguascalientes, dttosBajaCalifornia, dttosBa
                     agregaOpcionesDttos(localDttos);
                     datoEstado = "Sin filtro";
                     document.getElementById("InsertarResultados").innerHTML = ("");
-                    console.error("Error fatal");
+                    console.log("Error fatal");
             }
             másterDiputados(urlVariable, datoEstado);
         }
@@ -495,6 +495,7 @@ function másterDiputados(urlVariable, datoEstado) { //Muestra la información a
         return response.json();
     }).then(function (data) {
         //Lógica de éxito con JSON
+
         document.getElementById("InsertarResultados").innerHTML = ("<tr><th>Número</th><th>Nombre completo</th><th>Partido</th><th>Entidad</th><th>Distrito o <br>Circunscripción</th></tr>");
         var contador = 0;
         if (datoEstado != "Sin filtro") {
@@ -509,7 +510,16 @@ function másterDiputados(urlVariable, datoEstado) { //Muestra la información a
                     console.log("Diputad@ ", data[i]["número"], ".- ", data[i]["nombre"], " ", data[i]["apellidoPaterno"], " ", data[i]["apellidoMaterno"], " del Estado de ", data[i]["entidad"], " que representa al (a la) ", data[i]["distrito_circunscripcion"], "que representa a ", data[i]["partido"]) + " no aplica para el filtro de Estados";
                 }
             }
+
             document.getElementById("Experimental").innerHTML += (" (" + contador + " diputados):");
+            if (contador == 0) {
+                document.getElementById("InsertarResultados").innerHTML = ("");
+                Oculta();
+            }
+            else {
+                console.log("No es necesario eliminar los encabezados de la tabla, puesto que sí hay diputados que corresponden con los filtros.");
+                Muestra();
+            }
         }
         else {
             for (var i = 1; i != data.length; i++) {
@@ -548,4 +558,28 @@ function agregaOpcionesDttos(localDttos, localCircs) {
     for (var l = 1; l = localCircs; l++) {
         document.getElementById("Circunscripciones").innerHTML += ("<option>Circunscripción " + l + "</option>");
     }
+}
+function Muestra() {
+    var Modo = document.getElementById("CambiaTema").textContent;
+    console.log("El contenido del <a></a> es: " + Modo);
+    switch (Modo) {
+        case "Tema claro":
+            document.getElementById("Oculta/Muestra").href = "../CSS/TEMA CLARO/CSS VISIBILIDAD - OSCURO.css";
+            console.log("Visibles párrafos y lista con CSS de modo claro.");
+            break;
+        case "Tema oscuro":
+            document.getElementById("Oculta/Muestra").href = "../CSS/TEMA CLARO/CSS VISIBILIDAD - CLARO.css";
+            console.log("Visibles párrafos y lista con CSS de modo oscuro.");
+            break;
+        case "Cambiar tema":
+            document.getElementById("Oculta/Muestra").href = "../CSS/TEMA CLARO/CSS VISIBILIDAD - OSCURO.css";
+            console.log("Visibles párrafos y lista con CSS de modo claro.");
+            break;
+        default:
+            console.log("Error fatal al elegir CSS de ocultamiento o visibilidad.");
+    }
+}
+function Oculta() {
+    document.getElementById("Oculta/Muestra").href = "../CSS/CSS OCULTAMIENTO.css";
+    console.log("Ocultos párrafos y lista con CSS.");
 }
