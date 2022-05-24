@@ -529,6 +529,14 @@ function másterDiputados(urlVariable, datoEstado) { //Muestra la información a
                 contador++;
             }
             document.getElementById("Experimental").innerHTML += (" (" + contador + " diputados):");
+            if (contador == 0) {
+                document.getElementById("InsertarResultados").innerHTML = ("");
+                Oculta();
+            }
+            else {
+                console.log("No es necesario eliminar los encabezados de la tabla, puesto que sí hay diputados que corresponden con los filtros.");
+                Muestra();
+            }
         }
     }).catch(function (error) {
         //Lógica de error
@@ -580,6 +588,6 @@ function Muestra() {
     }
 }
 function Oculta() {
-    document.getElementById("Oculta/Muestra").href = "../CSS/CSS OCULTAMIENTO.css";
+    document.getElementById("Oculta/Muestra").href = "../CSS/CSS OCULTAMIENTO 0.css";
     console.log("Ocultos párrafos y lista con CSS.");
 }
