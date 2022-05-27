@@ -1,6 +1,6 @@
 function CambiarTema() {
     var Modo = document.getElementById("CambiaTema").textContent;
-    console.log("El contenido del <a></a> es: "+Modo);
+    console.log("El contenido del <a></a> es: " + Modo);
     switch (Modo) {
         case "Tema claro":
             document.getElementById("EtiquetaCSS").href = "../CSS/CSS GLOBAL - TEMA CLARO.css";
