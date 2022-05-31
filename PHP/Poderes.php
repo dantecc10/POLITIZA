@@ -4,6 +4,7 @@
 <head>
     <link rel="shortcut icon" href="../IMG/FAVICON TRANSPARENTE.png" type="image/x-icon">
     <link id="EtiquetaCSS" rel="Stylesheet" href="../CSS/CSS GLOBAL - TEMA OSCURO.css" Type="text/css" MEDIA="screen">
+    <link id="Oculta/Muestra" rel="Stylesheet" href="../CSS/CSS OCULTAMIENTO.css" Type="text/css" MEDIA="screen">
 
     <meta name="description"
         content="Politiza MX: Página web dedicada a hacer de la política un campo de la vida pública para todos los ciudadanos, y hacer soberano al pueblo.">
@@ -148,9 +149,7 @@
         <table id="InsertarResultados">
         </table>
         <p class="Descripción-Artículo" id="Experimental"></p>
-        <ol class="Descripción-Artículo" id="ListaDinámica">Diputados:
-            <!--Insertar los <li></li>-->
-        </ol>
+        <ol class="Descripción-Artículo" id="ListaDinámica"></ol>
         <footer>
             <div id="RedesSociales" align="center">
                 <hr id="AntesSociales">

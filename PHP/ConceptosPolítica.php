@@ -3,7 +3,7 @@
 
 <head>
 	<link rel="shortcut icon" href="../IMG/FAVICON TRANSPARENTE.png" type="image/x-icon">
-	<link rel="Stylesheet" href="../CSS/CSS GLOBAL.css" Type="text/css" MEDIA="screen">
+    <link id="EtiquetaCSS" rel="Stylesheet" href="../CSS/CSS GLOBAL - TEMA OSCURO.css" Type="text/css" MEDIA="screen">
 	<meta name="keywords"
 		content="Política, mexicana, Patria, México, juventud, elecciones, democracia, partidos, políticos, gobierno, 4T, Cuarta Transformación">
 	<meta name="author" content="Dante Castelán Carpinteyro">
@@ -14,6 +14,7 @@
 </head>
 
 <body>
+	<script src="../JavaScript/CambiarTema.js"></script>
 	<!--Encabezado (no mover)--> <br>
 	<header id="Encabezado">
 		<div id="Contenedor-Encabezado">
@@ -26,7 +27,8 @@
 							href="ConceptosPolítica.php">Conceptos políticos</a> <a href="Opinión.php">Artículos de
 							opinión</a> <a href="Poderes.php">División de poderes</a> <a href="Partidos.php">Partidos
 							políticos</a> <a href="Presidenciables.php">Presidenciables 2024</a> <a
-							href="AcercaDe.php">Acerca de...</a> </div>
+							href="AcercaDe.php">Acerca de...</a>  <a id="CambiaTema"
+                            onclick="javascript:CambiarTema();">Cambiar tema</a></div>
 				</div>
 			</div>
 		</div>
