@@ -70,7 +70,7 @@ require("conexión.php");
                 <td><input type="checkbox" id="FiltroPartido" name="Filtro1" value="FiltraPartidos" onclick="establecerParámetros()"></td>
                 <td>Partidos</td>
                 <td>
-                    <select name="Partido" id="Lista1" onchange="javascript:establecerParámetros()">
+                    <select name="Partido[]" id="Lista1" onchange="javascript:establecerParámetros()">
                         <option>Sin filtro</option>
                         <option>Morena</option>
                         <option>PAN</option>
@@ -87,7 +87,7 @@ require("conexión.php");
                 <td><input type="checkbox" id="FiltroEstado" name="Filtro2" value="FiltraEstados" onclick="establecerParámetros"></td>
                 <td>Estados</td>
                 <td>
-                    <select name="Estado" id="Lista2" onchange="establecerParámetros()">
+                    <select name="Estado[]" id="Lista2" onchange="establecerParámetros()">
                         <option>Sin filtro</option>
                         <option>Aguascalientes</option>
                         <option>Baja California</option>
@@ -128,7 +128,7 @@ require("conexión.php");
                 <td><input type="checkbox" id="FiltroDttoCirc" name="Filtro3" value="FiltraDttosCircs" onclick="javascript:establecerParámetros()"></td>
                 <td>Distritos / <br>Circunscripciones</td>
                 <td>
-                    <select name="Distrito/Circunscripción" id="Lista3" onload="establecerParámetros()" onchange="establecerParámetros()">
+                    <select name="Distrito/Circunscripción[]" id="Lista3" onload="establecerParámetros()" onchange="establecerParámetros()">
                         <option>Sin filtro</option>
                         <optgroup id="GrupoDistritos">
                             <!--Insertar filas y celdas con opciones de distritos-->
