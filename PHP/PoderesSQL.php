@@ -14,7 +14,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Politiza MX: La política es de todos</title>
 </head>
-
+<?php
+    require("conexión.php");
+    //require("general.php");
+ ?>
 <body>
     <script src="../JavaScript/CambiarTema.js"></script>
     <!--Encabezado (no mover)--> <br>
@@ -48,7 +51,7 @@
         <ol class="Descripción-Artículo">Poderes: <li class="ElementoDeLista">Ejecutivo: Es ejercido por el Presidente
                 Constitucional de los Estados Unidos Mexicanos, así como su gabinete.</li>
             <li class="ElementoDeLista">Legislativo: Es básicamente el Congreso y está dividido, a su vez, en dos
-                órganos legislativos: la Cámara de Diputados y la de enadores.</li>
+                órganos legislativos: la Cámara de Diputados y la de Senadores.</li>
             <li class="ElementoDeLista">Judicial: El poder judicial es el encargado de vigilar el cumplimiento de la
                 Constitución Política de los Estados Unidos Mexicanos, y todas las leyes que de ella emanen, así como
                 las constituciones de cada Estado soberano, y todos los reglamentos vigentes.</li>
@@ -58,7 +61,7 @@
             representándote en la Cámara de Diputados, pero, ¿sabes quién es?, ¿te gustaría ver una lista de los 500
             diputados federales? A continuación te muestro la lista de los 500 diputados federales clasificados por
             bancadas:</p>
-        <script lang="JavaScript" src="../JavaScript/JSON-API-2.js"></script>
+        <!-- <script lang="JavaScript" src="../JavaScript/JSON-API-2.js"></script> -->
         <p class="Descripción-Artículo">Partido político:</p>
 
         <table id="TablaFiltros">
@@ -147,6 +150,30 @@
         </table>
         <hr>
         <table id="InsertarResultados">
+            <?php
+                $consulta = "SELECT * FROM `diputados global`";
+                $resultado = mysqli_query($conexión, $consulta) or die ("Error en la consulta a la base de datos");
+                echo "<tr>";
+                echo "<th>ID</th>";
+                echo "<th>Nombre</th>";
+                echo "<th>Apellido Paterno</th>";
+                echo "<th>Apellido Materno</th>";
+                echo "<th>Partido</th>";
+                echo "<th>Entidad</th>";
+                echo "<th>Distrito / Circunscripción</th>";
+                echo "</tr>";
+                while ($columna=mysqli_fetch_array($resultado))
+                {
+                    echo "<tr>";
+                    echo "<td>".$columna['ID_Global']."</td>";
+                    echo "<td>".$columna['Nombre (Global)']."</td>";
+                    echo "<td>".$columna['Apellido Paterno (Global)']."</td>";
+                    echo "<td>".$columna['Apellido Materno (Global)']."</td>";
+                    echo "<td>".$columna['Partido (Global)']."</td>";
+                    echo "<td>".$columna['Entidad (Global)']."</td>";
+                    echo "<td>".$columna['Distrito / Circunscripción (Global)']."</td>";
+                }
+ ?>
         </table>
         <p class="Descripción-Artículo" id="Experimental"></p>
         <ol class="Descripción-Artículo" id="ListaDinámica"></ol>

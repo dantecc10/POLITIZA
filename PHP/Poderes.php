@@ -48,7 +48,7 @@
         <ol class="Descripción-Artículo">Poderes: <li class="ElementoDeLista">Ejecutivo: Es ejercido por el Presidente
                 Constitucional de los Estados Unidos Mexicanos, así como su gabinete.</li>
             <li class="ElementoDeLista">Legislativo: Es básicamente el Congreso y está dividido, a su vez, en dos
-                órganos legislativos: la Cámara de Diputados y la de enadores.</li>
+                órganos legislativos: la Cámara de Diputados y la de Senadores.</li>
             <li class="ElementoDeLista">Judicial: El poder judicial es el encargado de vigilar el cumplimiento de la
                 Constitución Política de los Estados Unidos Mexicanos, y todas las leyes que de ella emanen, así como
                 las constituciones de cada Estado soberano, y todos los reglamentos vigentes.</li>
