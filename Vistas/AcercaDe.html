@@ -44,46 +44,39 @@
         <h3 class="TítuloArtículo">Contacto</h3>
         <h4 class="Autor-Artículo">Por Dante Castelán Carpinteyro.</h4>
         <p class="Descripción-Artículo">Soy Dante Castelán Carpinteyro, y estoy dispuesto a escuchar su opinión sobre
-            este sitio y su contenido. Por favor, tómese el tiempo de llenar el siguiente formulario:</p>
+            este sitio y su contenido. Por favor, tómese el tiempo de llenar el siguiente <a class="Básica" href="Tarea/M3S2/Formulario - Información.html">formulario</a>:</p>
 
         <form action="../includes/nuevo_ingreso.inc.php" method="POST" name="Información personal.">
+            <label for="Nombre" class="EtiquetaFormulario">Escriba su nombre:</label><br>
+            <input name="Nombre" type="text" required="" id="Nombre" placeholder="Nombre*"><br><br>
 
-            <input name="Nombre" type="text" required="" id="Nombre" placeholder="Nombre*"><br>
-            <input name="Apellidos" type="text" required="" id="Apellidos" placeholder="Apellidos*">
-            <br>
-            <!-- Step 1: Add an email field here -->
+            <label for="Apellidos" class="EtiquetaFormulario">Anote sus apellidos:</label><br>
+            <input name="Apellidos" type="text" required="" id="Apellidos" placeholder="Apellidos*"><br><br>
+
+            <label for="e-Mail" class="EtiquetaFormulario">Dirección de correo electrónico:</label><br>
             <input name="e-Mail" class="form-control" type="email" required="" id="email"
-                placeholder="Correo electrónico*">
-            <br>
-            <!-- Step 2: Add an address field here -->
-            <input name="Teléfono" type="text" id="Teléfono" placeholder="Teléfono">
-            <br>
-            <label for="curso" class="text-white">Seleccione el curso al cual se desea inscribir</label>
-            <select name="curso" class="form-control" required="" id="SelecciónEntidad">
-                <option value="english_online">Inglés en Línea</option>
-                <option value="english">Inglés</option>
-                <option value="canto">Canto</option>
-                <option value="guitarra">Guitarra</option>
-                <option value="piano">Piano</option>
-                <option value="violin">Violín</option>
-                <option value="latin">Latín</option>
-            </select>
-            <br>
-            <label for="nacimiento" class="text-white">Fecha de nacimiento</label>
-            <input name="nacimiento" class="form-control" type="date" id="fecha" placeholder="Fecha">
-            <br>
+                placeholder="Correo electrónico*"><br><br>
 
-            <input name="mensaje" class="form-control" type="text" id="mensaje" placeholder="Mensaje (Opcional)">
-            <br>
-            <br>
-            <div>
-                <label for="RecepciónDeCorreos">Estoy de acuerdo en recibir correos de <i><b>POLITIZA
-                            MX.</b></i></label>
-                <input name="RecepciónDeCorreos" type="checkbox" checked="" value="1">
-                <br>
-            </div>
-            <br>
-            <label for="Comentario">Escriba su comentario para <i><b>POLITIZA MX</b></i>.</label><br>
+            <label for="Teléfono" class="EtiquetaFormulario">Proporcione su número telefónico:</label><br>
+            <input name="Teléfono" type="text" id="Teléfono" placeholder="Teléfono"><br><br>
+
+            <label for="sexo" class="EtiquetaFormulario">Sexo</label><br>
+            <select name="sexo" class="form-control" required="" id="Sexo">
+                <option value="H">Hombre</option>
+                <option value="M">Mujer</option>
+            </select><br><br>
+
+            <label for="nacimiento" class="EtiquetaFormulario">Fecha de nacimiento</label><br>
+            <input name="nacimiento" class="form-control" type="date" id="fecha" placeholder="Fecha"><br><br>
+
+            <label for="Teléfono" class="EtiquetaFormulario">Proporcione su número telefónico:</label><br>
+            <input name="mensaje" class="form-control" type="text" id="mensaje" placeholder="Mensaje (Opcional)"><br><br>
+
+            <label for="RecepciónDeCorreos" class="EtiquetaFormulario" id="EtiquetaCasillaCorreos">Estoy de acuerdo
+                    en recibir correos de POLITIZA MX: </label>
+            <input name="RecepciónDeCorreos" type="checkbox" id="CasillaCorreos" checked="" value="1"><br><br>
+            
+            <label for="Comentario" class="EtiquetaFormulario">Escriba su comentario para POLITIZA MX.</label><br>
             <textarea name="Comentario" id="ÁreaComentario">
             </textarea>
             <!-- Step 3: add a submit button here -->
@@ -92,14 +85,6 @@
 
         </form>
 
-        <p class="Descripción-Artículo">Los partidos políticos tienen dos objetivos principales:</p>
-        <p class="Autor-Artículo">Fuente: <i>Partido político</i>, en <i>Gobernación</i>. Disponible en:
-            <a>http://sil.gobernacion.gob.mx/Glosario/definicionpop.php?ID=178</a>
-        </p>
-        <h3 class="TítuloArtículo">Partidos políticos nacionales</h3>
-        <p class="Descripción-Artículo">México es una democracia joven, y con un historial partidista bastante complejo
-            en la dinámica política y social. A continuación se presentan los partidos políticos con presencia nacional,
-            ordenados por fuerza de forma descendente:</p>
 
         <footer>
             <div id="RedesSociales" align="center">

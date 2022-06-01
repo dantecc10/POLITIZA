@@ -8,6 +8,10 @@
         text-decoration: dotted;
     }
 
+    a.Básica{
+        color:#60dbf1;
+    }
+
     h2#IndicaArtículos {
         color: #07A189;
         text-align: justify;
