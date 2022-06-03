@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <script lang="javascript">
+        function Subir() {
+            var formulario = "", usuario = document.form1.usuario.value, nombre = document.form1.nombre.value, apellido = document.form1.apellido.value, email = document.form1.email.value, clave1 = document.form1.clave1.value, clave2 = document.form1.clave2.value, hobbies = "", b = document.form1.hobby.length;
+            for (a = 0; a < b; a++) {
+                if (document.form1.hobby[a].cheked) {
+                    hobbies += document.form1.hobby[a].value + ", ";
+                }
+            }
+            var país = document.form1.país.value, sexo = document.form1.sexo.value;
+            if (usuario == "" || nombre == "" || apellido == "" || país == "") {
+                alert("Los campos con asterisco son obligatorios.");
+                return false;
+            }
+            if (hobbies.length == 0) {
+                alert("Debes seleccionar al menos un hobby.");
+                return false;
+            }
+            if ((clave1 != clave2) || (clave1 == "")) {
+                alert("Las claves deben ser iguales y no pueden estar en blanco.")
+                return false;
+            }
+            if (email == "") {
+                email = "No informado";
+            }
+            if (sexo == "") {
+                sexo = "No informado";
+            }
+
+            formulario = "Usuario: " + usuario + "\nNombre: " + nombre + "\nApellido: " + apellido + "\nE-mail: " + email + "\nClave: " + clave1 + "Hobbies: " + hobbies + "\nPaís: " + país + "\nSexo: " + sexo;
+            alert(formulario);
+            document.write(formulario);
+        }
+    </script>
+</head>
+
+<body>
+    <h2>Datos de captura</h2>
+    <form name="form1" method="POST" action="">
+        <table border="0" cellpadding="0" cellspacing="0" width="400">
+            <tr>
+                <td width="50%"><input type="text" name="nombre"></td>
+                <td width="50%"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>
