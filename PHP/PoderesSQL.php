@@ -167,6 +167,33 @@ require("conexión.php");
             }
             ?>
         </table>
+        
+        <form action="InsertaDiputado.php" method="$_POST">
+            <label>ID</label>
+            <input type="number" name="ID_Form">
+
+            <label>Nombre</label>
+            <input type="text" name="Nombre_Form">
+            
+            <label>Apellido Paterno</label>
+            <input type="text" name="Apellido_Paterno_Form">
+
+            <label>Apellido Materno</label>
+            <input type="text" name="Apellido_Materno_Form">
+
+            <label>Partido</label>
+            <input type="text" name="Partido_Form">
+
+            <label>Entidad</label>
+            <input type="text" name="Entidad_Form">
+
+            <label>Distrito / Circunscripción</label>
+            <input type="text" name="Distrito_Circunscripción_Form">
+
+            <input type="submit">
+            <input type="reset">
+        </form>
+
         <p class="Descripción-Artículo" id="Experimental"></p>
         <ol class="Descripción-Artículo" id="ListaDinámica"></ol>
         <footer>
