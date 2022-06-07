@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <script lang="javascript">
+        function Subir() {
+            var formulario = "";
+            var usuario = document.form1.usuario.value;
+            var nombre = document.form1.nombre.value;
+            var apellido = document.form1.apellido.value;
+            var email = document.form1.email.value;
+            var clave1 = document.form1.clave1.value;
+            var clave2 = document.form1.clave2.value;
+            var hobbies = "";
+            var b = document.form1.hobby.length;
+            for (a = 0; a < b; a++) {
+                if (document.form1.hobby[a].checked)
+                    hobbies += document.form1.hobby[a].value + ", ";
+            }
+            var país = document.form1.país.value;
+            var sexo = document.form1.sexo.value;
+            if (usuario == "" || nombre == "" || apellido == "" || país == "") {
+                alert("Los campos con asterisco son obligatorios!!!");
+                return false;
+            }
+            if (hobbies.length == 0) {
+                alert("Debes seleccionar al menos un hobby!!");
+                return false;
+            }
+            if ((clave1 != clave2) || (clave1 == "")) {
+                alert("Las claves deben ser iguales y no pueden ser en blanco!!!");
+                return false;
+            }
+            if (email == "") email = "No informado";
+            if (sexo == "") sexo = "No informado";
+
+            formulario = "Usuario: " + usuario + "\nNombre: " + nombre + "\nApellido: " + apellido + "\n"
+                + "E-mail: " + email + "\nClave: " + clave1 + "\nHobbies: " + hobbies + "\nPaís: "
+                + país + "\nSexo: " + sexo;
+            alert(formulario);
+
+            document.getElementById("InsertaFormulario").innerHTML = formulario;
+        }
+    </script>
+</head>
+
+<body>
+    <h2>Datos de captura...</h2>
+    <form name="form1" method="POST" action="">
+        <table border="0" cellpadding="0" cellspacing="0" width="400">
+            <tr>
+                <td width="50%">Ingresa el usuario: (*) </td>
+                <td width="50%"><input type="text" name="usuario" id="usuario" value=""></td>
+            </tr>
+            <tr>
+                <td width="50%">Ingresa el nombre: (*)</td>
+                <td><input type="text" name="nombre" id="nombre" value=""></td>
+            </tr>
+            <tr>
+                <td width="50%">Ingresa el apellido: (*)</td>
+                <td><input type="text" name="apellido" id="apellido" value=""></td>
+            </tr>
+            <tr>
+                <td width="50%">Ingresa el correo electronico:</td>
+                <td width="50%"><input type="text" name="email" id="email" value=""></td>
+            </tr>
+            <tr>
+                <td width="50%">Ingresa una password: (*)</td>
+                <td width="50%"><input type="password" name="clave1" id="clave1" value=""></td>
+            </tr>
+            <tr>
+                <td width="50%">Repite la password: (*)</td>
+                <td width="50%"><input type="password" name="clave2" id="clave2" value=""></td>
+            </tr>
+            <tr>
+                <td width="50%" align="left" valign="top"><br>Seleccione sus hobbies: (*)</td>
+                <td width="50%">
+                    <input type="checkbox" name="hobby" value="Programar">Programar&nbsp;
+                    <input type="checkbox" name="hobby" value="Deportes">Deportes<br>
+                    <input type="checkbox" name="hobby" value="Meditar">Meditar&nbsp;
+                    <input type="checkbox" name="hobby" value="Cine">Cine<br>
+                    <input type="checkbox" name="hobby" value="Leer">Leer&nbsp;
+                    <input type="checkbox" name="hobby" value="Videojuegos">Video Juegos<br>
+                </td>
+            </tr>
+            <tr>
+                <td width="50%">País: (*)</td>
+                <td width="50%">
+                    <select name="país" id="país">
+                        <option value="">--</option>
+                        <option value="argentina">Argentina</option>
+                        <option value="brasil">Brasil</option>
+                        <option value="chile">Chile</option>
+                        <option value="colombia">Colombia</option>
+                        <option value="ecuador">Ecuador</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td width="50%">Sexo:</td>
+                <td width="50%">
+                    <input type="radio" name="sexo" value="Masculino">Masculino
+                    <input type="radio" name="sexo" value="Femenino">Femenino
+                </td>
+            </tr>
+            <tr>
+                <td width="50%" align="center">
+                    <br><br><button type="button" name="boton" onClick="Subir()">Crear usuario</button>
+                </td>
+                <td width="50%" align="center">
+                    <br><br><button type="reset" name="botonR">Cancelar</button>
+                </td>
+            </tr>
+        </table>
+        <br><br><br>Los campos con asteriscos(*) son obligatorios.
+
+    </form>
+
+
+    <p id="InsertaFormulario">
+
+    </p>
+
+</body>
+
+</html>

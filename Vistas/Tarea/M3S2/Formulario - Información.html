@@ -73,104 +73,36 @@
         <h4 class="Autor-Artículo">Campos de texto multilínea</h4>
         <p class="Descripción-Artículo">Los campos de texto multilínea pueden ser ampliados o minimizados debido a un
             control en su esquina inferior izquierda. La sintaxis es la siguiente:</p>
-        <code>&lt;input type="textarea"&gt;</code>
-        
+        <code>&lt;textarea&gt;&lt;/textarea&gt;</code>
+
         <h3 class="TítuloArtículo">Controles de opción</h3>
         <h4 class="Autor-Artículo">Casillas de verificación</h4>
-        <p class="Descripción-Artículo">Permiten obtener un valor booleano de su estado para tomar decisiones o determinar una preferencia biopcional:</p>
+        <p class="Descripción-Artículo">Permiten obtener un valor booleano de su estado para tomar decisiones o
+            determinar una preferencia biopcional:</p>
         <code>&lt;input type="checkbox"&gt;</code>
-        
+
         <h4 class="Autor-Artículo">Botones de opción</h4>
-        <p class="Descripción-Artículo">Permiten elegir de forma mutuamente excluyente una opción de entre una lista.</p>
-        <code>&lt;input type="checkbox"&gt;</code>
+        <p class="Descripción-Artículo">Son para elegir entre una o varias opciones, de forma mutuamente excluyente
+            generalmente, aunque esto no es una regla.</p>
+        <code>&lt;input type="radio"&gt;</code>
+
+        <h4 class="Autor-Artículo">Listas</h4>
+        <p class="Descripción-Artículo">Para elegir fácilmente de entre una lista de opciones (redundantemente).</p>
+        <code>&lt;select name="genero"&gt;
+
+            &lt;option&gt;Masculino&lt;option&gt;
+            &lt;option&gt;Femenino&lt;/option&gt;
+            &lt;/select&gt;</code>
+
+        <h4 class="Autor-Artículo">Botón de envío</h4>
+        <p class="Descripción-Artículo">Recopila la información del formulario para su envío o procesamiento.</p>
+        <code>&lt;input type="submit"&gt;</code>
+        <h4 class="Autor-Artículo">Botón de borrar o limpiar</h4>
+        <p class="Descripción-Artículo">Sin envío o procesamiento, y con programación nativa de HTML por defecto, limpia los campos que están en el formulario.</p>
+        <code>&lt;input type="reset"&gt;</code>
 
         <script lang="JavaScript" src="../../../JavaScript/JSON-API-2.js"></script>
-        <p class="Descripción-Artículo">Partido político:</p>
 
-        <table id="TablaFiltros">
-            <tr id="Fila1">
-                <th class="EncabezadoCasilla">Activo / Inactivo</th>
-                <th class="EncabezadoNombre">Nombre</th>
-                <th>Filtro</th>
-            </tr>
-            <tr>
-                <td><input type="checkbox" id="FiltroPartido" name="Filtro1" value="FiltraPartidos"
-                        onclick="establecerParámetros()"></td>
-                <td>Partidos</td>
-                <td>
-                    <select name="Partido" id="Lista1" onchange="javascript:establecerParámetros()">
-                        <option>Sin filtro</option>
-                        <option>Morena</option>
-                        <option>PAN</option>
-                        <option>PRI</option>
-                        <option>PVEM</option>
-                        <option>PT</option>
-                        <option>MC</option>
-                        <option>PRD</option>
-                        <option>Sin partido</option>
-                    </select>
-                </td>
-            </tr>
-            <tr>
-                <td><input type="checkbox" id="FiltroEstado" name="Filtro2" value="FiltraEstados"
-                        onclick="establecerParámetros"></td>
-                <td>Estados</td>
-                <td>
-                    <select name="Estado" id="Lista2" onchange="establecerParámetros()">
-                        <option>Sin filtro</option>
-                        <option>Aguascalientes</option>
-                        <option>Baja California</option>
-                        <option>Baja California Sur</option>
-                        <option>Campeche</option>
-                        <option>Chiapas</option>
-                        <option>Chihuahua</option>
-                        <option>Ciudad de México</option>
-                        <option>Coahuila</option>
-                        <option>Colima</option>
-                        <option>Durango</option>
-                        <option>Estado de México</option>
-                        <option>Guanajuato</option>
-                        <option>Guerrero</option>
-                        <option>Hidalgo</option>
-                        <option>Jalisco</option>
-                        <option>Michoacán</option>
-                        <option>Morelos</option>
-                        <option>Nayarit</option>
-                        <option>Nuevo León</option>
-                        <option>Oaxaca</option>
-                        <option>Puebla</option>
-                        <option>Querétaro</option>
-                        <option>Quintana Roo</option>
-                        <option>San Luis Potosí</option>
-                        <option>Sinaloa</option>
-                        <option>Sonora</option>
-                        <option>Tabasco</option>
-                        <option>Tamaulipas</option>
-                        <option>Tlaxcala</option>
-                        <option>Veracruz</option>
-                        <option>Yucatán</option>
-                        <option>Zacatecas</option>
-                    </select>
-                </td>
-            </tr>
-            <tr>
-                <td><input type="checkbox" id="FiltroDttoCirc" name="Filtro3" value="FiltraDttosCircs"
-                        onclick="javascript:establecerParámetros()"></td>
-                <td>Distritos / <br>Circunscripciones</td>
-                <td>
-                    <select name="Distrito/Circunscripción" id="Lista3" onload="establecerParámetros()"
-                        onchange="establecerParámetros()">
-                        <option>Sin filtro</option>
-                        <optgroup id="GrupoDistritos">
-                            <!--Insertar filas y celdas con opciones de distritos-->
-                        </optgroup>
-                        <optgroup id="GrupoCircunscripciones">
-                            <!--Insertar filas y celdas con opciones de circunscripciones-->
-                        </optgroup>
-                    </select>
-                </td>
-            </tr>
-        </table>
         <hr>
         <table id="InsertarResultados">
         </table>
