@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" onload="pdf()">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="jsPDF-1.3.2\dist\jspdf.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+  <label>A partir de las 40 horas se cobraran al doble, pero si sobre pasan las 60 se cobraran al triple</label>
+  <form action="" name="form1">
+      <table>
+        <tr>
+          <td width="50%">Introduce el numero de horas trabajadas: </td>
+          <td width="50%"><input type="number" name="HrT" id="HrT" value=""></td>
+      </tr>
+      <tr>
+          <td width="50%">Introduce el costo por hora normal: </td>
+          <td><input type="number" name="CostoHrN" id="CostoHrN" value=""></td>
+      </tr>
+      <tr>
+        <td width="50%">Apoyo familiar:</td>
+        <td width="50%">
+        <input type="radio" name="sino" value="Si">Si
+        <input type="radio" name="sino" value="No">No
+        </td>
+    </tr>
+    </table>
+  </form>
+  <script>
+  function docs() {
+            var logo = new Image();
+            logo.src = 'Logo.png';
+
+            const pdf = new jsPDF();
+            pdf.setFontSize(22);
+            pdf.text(70, 10, "Informacion de usuario");
+            pdf.setLineWidth(0.7);
+            pdf.setFontSize(14);
+
+            //lineas horizontales
+            pdf.line(4, 20, 206, 20);
+            pdf.line(4, 290, 206, 290);
+            //lineas verticales
+            pdf.line(4, 20, 4, 290);
+            pdf.line(206, 20, 206, 290);
+
+
+            pdf.setLineWidth(0.7);
+            pdf.addImage(logo, 'PNG',15, 40, 140, 210);
+            pdf.save(`Usuario info.pdf`);
+        }
+  </script>
+  <button onclick="docs()">Calcular</button>
+</body>
+</html>

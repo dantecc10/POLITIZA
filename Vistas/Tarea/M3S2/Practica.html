@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../CSS/style.css">
+    <meta name="Autor" content="Jeremy Hernández Balderas, Dante Castelán Carpinteyro">
+    <title>Formulario</title>
+    <script src="../../../JavaScript/jsPDF-1.3.2\dist\jspdf.min.js"></script>
+</head>
+
+<body>
+    <h1>Generador de PDF's</h1>
+    <hr>
+    <div class="contenido">
+        <div align="center">
+            <button onclick="location.href='Plantilla portada web filtrada_files'">Inicio</button>
+        </div>
+        <form name="form1" method="POST" action="">
+            <table border="0" cellpadding="0" cellspacing="0" width="400">
+                <tr>
+                    <td width="50%">Ingresa el usuario: (*) </td>
+                    <td width="50%"><input type="text" name="usuario" id="usuario" value=""></td>
+                </tr>
+                <tr>
+                    <td width="50%">Ingresa el nombre: (*)</td>
+                    <td><input type="text" name="nombre" id="nombre" value=""></td>
+                </tr>
+                <tr>
+                    <td width="50%">Ingresa el apellido: (*)</td>
+                    <td><input type="text" name="apellido" id="apellido" value=""></td>
+                </tr>
+                <tr>
+                    <td width="50%">Ingresa el correo electronico:</td>
+                    <td width="50%"><input type="text" name="email" id="email" value=""></td>
+                </tr>
+                <tr>
+                    <td width="50%">Ingresa una password: (*)</td>
+                    <td width="50%"><input type="password" name="clave1" id="clave1" value=""></td>
+                </tr>
+                <tr>
+                    <td width="50%">Repite la password: (*)</td>
+                    <td width="50%"><input type="password" name="clave2" id="clave2" value=""></td>
+                </tr>
+                <tr>
+                    <td width="50%" align="left" valign="top"><br>Seleccione sus hobbies: (*)</td>
+                    <td width="50%">
+                        <input type="checkbox" name="hobby" value="Programar">Programar&nbsp;
+                        <input type="checkbox" name="hobby" value="Deportes">Deportes<br>
+                        <input type="checkbox" name="hobby" value="Meditar">Meditar&nbsp;
+                        <input type="checkbox" name="hobby" value="Cine">Cine<br>
+                        <input type="checkbox" name="hobby" value="Leer">Leer&nbsp;
+                        <input type="checkbox" name="hobby" value="Videojuegos">Video Juegos<br>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="50%">Pais: (*)</td>
+                    <td width="50%">
+                        <select name="pais" id="pais">
+                            <option value="">--</option>
+                            <option value="Argentina">Argentina</option>
+                            <option value="Brasil">Brasil</option>
+                            <option value="Chile">Chile</option>
+                            <option value="Colombia">Colombia</option>
+                            <option value="Ecuador">Ecuador</option>
+                            <option value="Mexico">Mexico</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="50%">Sexo:</td>
+                    <td width="50%">
+                        <input type="radio" name="sexo" value="Masculino">Masculino
+                        <input type="radio" name="sexo" value="Femenino">Femenino
+                    </td>
+                </tr>
+                <tr>
+                    <td width="50%" align="center">
+                        <button onclick="docs()">Generar documento</button>
+                    </td>
+                    <td width="50%" align="center">
+                        <button type="reset" name="botonR">Cancelar</button>
+                    </td>
+                </tr>
+            </table>
+            <br>Los campos con asteriscos(*) son obligatorios.
+        </form>
+        <hr>
+    </div>
+
+    <script src="../../../JavaScript/GeneraciónPDF.js">
+    </script>
+</body>
+
+</html>
