@@ -25,11 +25,11 @@ require("conexión.php");
         <div id="Contenedor-Encabezado">
             <div id="Contenido-Encabezado">
                 <h1>Politiza MX</h1> <a href="../index.php"> <img id="Logo" src="../IMG/FAVICON.PNG" alt="Logo POLITIZA MX">
-                </a>
+                </a><!-- !-->
                 <div class="Menú-Desplegable"> <button class="Botón-Desplegar">Menú</button>
                     <div class="Contenido-Desplegable"> <a href="SignificadoPolítica.php">¿Qué es la política?</a> <a href="ConceptosPolítica.php">Conceptos políticos</a> <a href="Opinión.php">Artículos de
                             opinión</a> <a href="Poderes.php">División de poderes</a> <a href="Partidos.php">Partidos
-                            políticos</a> <a href="Presidenciables.php">Presidenciables 2024</a> <a href="AcercaDe.php">Acerca de...</a> <a id="CambiaTema" onclick="javascript:CambiarTema();">Cambiar tema</a>
+                            políticos</a> <a href="Presidenciables.php">Presidenciables 2024</a><!--  <a href="AcercaDe.php">Acerca de...</a>  !--><a id="CambiaTema" onclick="javascript:CambiarTema();">Cambiar tema</a>
                     </div>
                 </div>
             </div>

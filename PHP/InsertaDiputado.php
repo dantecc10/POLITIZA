@@ -1,7 +1,4 @@
 <?php
-
-
-
 /*
     require("conexión.php");
 

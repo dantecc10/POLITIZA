@@ -35,8 +35,7 @@
                             <a href="Poderes.html">División de poderes</a>
                             <a href="Partidos.html">Partidos políticos</a>
                             <a href="Presidenciables.html">Presidenciables 2024</a>
-                            <a href="AcercaDe.html">Acerca de...</a>
-                        </div>
+                           <!--  <a href="AcercaDe.html">Acerca de...</a>  !-->                       </div>
                     </div>
                 </div>
             </div>
