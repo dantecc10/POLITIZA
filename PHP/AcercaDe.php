@@ -5,8 +5,7 @@
     <link rel="shortcut icon" href="../IMG/FAVICON TRANSPARENTE.png" type="image/x-icon">
     <link id="EtiquetaCSS" rel="Stylesheet" href="../CSS/CSS GLOBAL - TEMA OSCURO.css" Type="text/css" MEDIA="screen">
 
-    <meta name="description"
-        content="Politiza MX: Página web dedicada a hacer de la política un campo de la vida pública para todos los ciudadanos, y hacer soberano al pueblo.">
+    <meta name="description" content="Politiza MX: Página web dedicada a hacer de la política un campo de la vida pública para todos los ciudadanos, y hacer soberano al pueblo.">
     <meta name="author" content="Dante Castelán Carpinteyro">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -20,16 +19,12 @@
     <header id="Encabezado">
         <div id="Contenedor-Encabezado">
             <div id="Contenido-Encabezado">
-                <h1>Politiza MX</h1> <a href="../index.php"> <img id="Logo" src="../IMG/FAVICON.PNG"
-                        alt="Logo POLITIZA MX">
+                <h1>Politiza MX</h1> <a href="../index.php"> <img id="Logo" src="../IMG/FAVICON.PNG" alt="Logo POLITIZA MX">
                 </a>
                 <div class="Menú-Desplegable"> <button class="Botón-Desplegar">Menú</button>
-                    <div class="Contenido-Desplegable"> <a href="SignificadoPolítica.php">¿Qué es la política?</a> <a
-                            href="ConceptosPolítica.php">Conceptos políticos</a> <a href="Opinión.php">Artículos de
+                    <div class="Contenido-Desplegable"> <a href="SignificadoPolítica.php">¿Qué es la política?</a> <a href="ConceptosPolítica.php">Conceptos políticos</a> <a href="Opinión.php">Artículos de
                             opinión</a> <a href="Poderes.php">División de poderes</a> <a href="Partidos.php">Partidos
-                            políticos</a> <a href="Presidenciables.php">Presidenciables 2024</a> <a
-                            href="AcercaDe.php">Acerca de...</a> <a id="CambiaTema"
-                            onclick="javascript:CambiarTema();">Cambiar tema</a>
+                            políticos</a> <a href="Presidenciables.php">Presidenciables 2024</a><!--  <a href="AcercaDe.php">Acerca de...</a>  !--><a id="CambiaTema" onclick="javascript:CambiarTema();">Cambiar tema</a>
                     </div>
                 </div>
             </div>
@@ -46,50 +41,41 @@
         <p class="Descripción-Artículo">Soy Dante Castelán Carpinteyro, y estoy dispuesto a escuchar su opinión sobre
             este sitio y su contenido. Por favor, tómese el tiempo de llenar el siguiente formulario:</p>
 
-        <form action="url_procesamiento" method="POST" name="Información personal.">
+        <form action="../includes/nuevo_ingreso.inc.php" method="POST" name="Información personal.">
+            <label for="Nombre" class="EtiquetaFormulario">Escriba su nombre:</label><br>
+            <input name="Nombre" type="text" required="" id="Nombre" placeholder="Nombre*"><br><br>
 
-            <input name="Nombre" type="text" required="" id="Nombre" placeholder="Nombre*"><br>
-            <input name="Apellidos" type="text" required="" id="Apellidos" placeholder="Apellidos*">
-            <br>
-            <!-- Step 1: Add an email field here -->
-            <input name="e-Mail" class="form-control" type="email" required="" id="email"
-                placeholder="Correo electrónico*">
-            <br>
-            <!-- Step 2: Add an address field here -->
-            <input name="Teléfono" type="text" id="Teléfono" placeholder="Teléfono">
-            <br>
-            <label for="curso" class="text-white">Seleccione el curso al cual se desea inscribir</label>
-            <select name="curso" class="form-control" required="" id="SelecciónEntidad">
-                <option value="english_online">Inglés en Línea</option>
-                <option value="english">Inglés</option>
-                <option value="canto">Canto</option>
-                <option value="guitarra">Guitarra</option>
-                <option value="piano">Piano</option>
-                <option value="violin">Violín</option>
-                <option value="latin">Latín</option>
-            </select>
-            <br>
-            <label for="nacimiento" class="text-white">Fecha de nacimiento</label>
-            <input name="nacimiento" class="form-control" type="date" id="fecha" placeholder="Fecha">
-            <br>
+            <label for="Apellidos" class="EtiquetaFormulario">Anote sus apellidos:</label><br>
+            <input name="Apellidos" type="text" required="" id="Apellidos" placeholder="Apellidos*"><br><br>
 
-            <input name="mensaje" class="form-control" type="text" id="mensaje" placeholder="Mensaje (Opcional)">
-            <br>
-            <br>
-            <div>
-                <label for="RecepciónDeCorreos">Estoy de acuerdo en recibir correos de <i><b>POLITIZA
-                            MX.</b></i></label>
-                <input name="RecepciónDeCorreos" type="checkbox" checked="" value="1">
-                <br>
-            </div>
-            <br>
-            <label for="Comentario">Escriba su comentario para <i><b>POLITIZA MX</b></i>.</label><br>
+            <label for="e-Mail" class="EtiquetaFormulario">Dirección de correo electrónico:</label><br>
+            <input name="e-Mail" class="form-control" type="email" required="" id="email" placeholder="Correo electrónico*"><br><br>
+
+            <label for="Teléfono" class="EtiquetaFormulario">Proporcione su número telefónico:</label><br>
+            <input name="Teléfono" type="text" id="Teléfono" placeholder="Teléfono"><br><br>
+
+            <label for="sexo" class="EtiquetaFormulario">Sexo</label><br>
+            <select name="sexo" class="form-control" required="" id="Sexo">
+                <option value="H">Hombre</option>
+                <option value="M">Mujer</option>
+            </select><br><br>
+
+            <label for="nacimiento" class="EtiquetaFormulario">Fecha de nacimiento</label><br>
+            <input name="nacimiento" class="form-control" type="date" id="fecha" placeholder="Fecha"><br><br>
+
+            <label for="Teléfono" class="EtiquetaFormulario">Proporcione su número telefónico:</label><br>
+            <input name="mensaje" class="form-control" type="text" id="mensaje" placeholder="Mensaje (Opcional)"><br><br>
+
+            <label for="RecepciónDeCorreos" class="EtiquetaFormulario" id="EtiquetaCasillaCorreos">Estoy de acuerdo
+                en recibir correos de POLITIZA MX: </label>
+            <input name="RecepciónDeCorreos" type="checkbox" id="CasillaCorreos" checked="" value="1"><br><br>
+
+            <label for="Comentario" class="EtiquetaFormulario">Escriba su comentario para POLITIZA MX.</label><br>
             <textarea name="Comentario" id="ÁreaComentario">
             </textarea>
             <!-- Step 3: add a submit button here -->
 
             <input type="submit" id="BotónEnvío" value="Enviar" onclick="javascript:EnvíaFormulario()">
-
         </form>
 
         <p class="Descripción-Artículo">Los partidos políticos tienen dos objetivos principales:</p>
@@ -106,20 +92,13 @@
                 <hr id="AntesSociales">
                 <script lang="JavaScript" src="../JavaScript/Redes Sociales.js"></script>
                 <h3><a href="mailto:dantecc10@gmail.com" class="TítuloArtículo" id="ContactoCorreo">Contacto</a></h3>
-                <img class="RedSocial" alt="Ícono de Facebook" id="Facebook" onclick="javascript:AbrirFacebook();"
-                    src="../IMG/íconoFacebook.png" />
-                <img class="RedSocial" alt="Ícono de WhatsApp" id="WhatsApp" onclick="javascript:AbrirWhatsApp();"
-                    src="../IMG/íconoWhatsApp.png" />
-                <img class="RedSocial" alt="Ícono de Messenger" id="Messenger" onclick="javascript:AbrirMessenger();"
-                    src="../IMG/íconoMessenger.png" />
-                <img class="RedSocial" alt="Ícono de YouTube" id="YouTube" onclick="javascript:AbrirYouTube();"
-                    src="../IMG/íconoYouTube.png" />
-                <img class="RedSocial" alt="Ícono de Telegram" id="Telegram" onclick="javascript:AbrirTelegram();"
-                    src="../IMG/íconoTelegram.png" />
-                <img class="RedSocial" alt="Ícono de Twitter" id="Twitter" onclick="javascript:AbrirTwitter();"
-                    src="../IMG/íconoTwitter.png" />
-                <img class="RedSocial" alt="Ícono de GitHub" id="GitHub" onclick="javascript:AbrirGitHub();"
-                    src="../IMG/íconoGitHub.png" />
+                <img class="RedSocial" alt="Ícono de Facebook" id="Facebook" onclick="javascript:AbrirFacebook();" src="../IMG/íconoFacebook.png" />
+                <img class="RedSocial" alt="Ícono de WhatsApp" id="WhatsApp" onclick="javascript:AbrirWhatsApp();" src="../IMG/íconoWhatsApp.png" />
+                <img class="RedSocial" alt="Ícono de Messenger" id="Messenger" onclick="javascript:AbrirMessenger();" src="../IMG/íconoMessenger.png" />
+                <img class="RedSocial" alt="Ícono de YouTube" id="YouTube" onclick="javascript:AbrirYouTube();" src="../IMG/íconoYouTube.png" />
+                <img class="RedSocial" alt="Ícono de Telegram" id="Telegram" onclick="javascript:AbrirTelegram();" src="../IMG/íconoTelegram.png" />
+                <img class="RedSocial" alt="Ícono de Twitter" id="Twitter" onclick="javascript:AbrirTwitter();" src="../IMG/íconoTwitter.png" />
+                <img class="RedSocial" alt="Ícono de GitHub" id="GitHub" onclick="javascript:AbrirGitHub();" src="../IMG/íconoGitHub.png" />
             </div>
             <p id="copyright">Copyright © Dante Castelán Carpinteyro - <i>Führer Industries</i> - 2022</p>
         </footer>

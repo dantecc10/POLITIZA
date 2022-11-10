@@ -29,7 +29,7 @@ require("conexión.php");
                 <div class="Menú-Desplegable"> <button class="Botón-Desplegar">Menú</button>
                     <div class="Contenido-Desplegable"> <a href="SignificadoPolítica.php">¿Qué es la política?</a> <a href="ConceptosPolítica.php">Conceptos políticos</a> <a href="Opinión.php">Artículos de
                             opinión</a> <a href="Poderes.php">División de poderes</a> <a href="Partidos.php">Partidos
-                            políticos</a> <a href="Presidenciables.php">Presidenciables 2024</a> <a href="AcercaDe.php">Acerca de...</a> <a id="CambiaTema" onclick="javascript:CambiarTema();">Cambiar tema</a>
+                            políticos</a> <a href="Presidenciables.php">Presidenciables 2024</a><!--  <a href="AcercaDe.php">Acerca de...</a>  !--><a id="CambiaTema" onclick="javascript:CambiarTema();">Cambiar tema</a>
                     </div>
                 </div>
             </div>
@@ -167,6 +167,33 @@ require("conexión.php");
             }
             ?>
         </table>
+        
+        <form action="InsertaDiputado.php" method="$_POST">
+            <label>ID</label>
+            <input type="number" name="ID_Form">
+
+            <label>Nombre</label>
+            <input type="text" name="Nombre_Form">
+            
+            <label>Apellido Paterno</label>
+            <input type="text" name="Apellido_Paterno_Form">
+
+            <label>Apellido Materno</label>
+            <input type="text" name="Apellido_Materno_Form">
+
+            <label>Partido</label>
+            <input type="text" name="Partido_Form">
+
+            <label>Entidad</label>
+            <input type="text" name="Entidad_Form">
+
+            <label>Distrito / Circunscripción</label>
+            <input type="text" name="Distrito_Circunscripción_Form">
+
+            <input type="submit">
+            <input type="reset">
+        </form>
+
         <p class="Descripción-Artículo" id="Experimental"></p>
         <ol class="Descripción-Artículo" id="ListaDinámica"></ol>
         <footer>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <meta name="Autor" content="Jeremy Hernandey Balderas">
+    <title>Formulario</title>
+    <script src="jsPDF-1.3.2\dist\jspdf.min.js"></script>
+</head>
+
+<body>
+    <h1>Generador de PDF's</h1>
+    <hr>
+    <div class="contenido">
+        <div align="center">
+            <button onclick="location.href='Plantilla_portada_web_filtrada.html'">Inicio</button>
+        </div>
+        <form name="form1" method="POST" action="">
+            <table border="0" cellpadding="0" cellspacing="0" width="400">
+                <tr>
+                    <td width="50%">Ingresa el usuario: (*) </td>
+                    <td width="50%"><input type="text" name="usuario" id="usuario" value=""></td>
+                </tr>
+                <tr>
+                    <td width="50%">Ingresa el nombre: (*)</td>
+                    <td><input type="text" name="nombre" id="nombre" value=""></td>
+                </tr>
+                <tr>
+                    <td width="50%">Ingresa el apellido: (*)</td>
+                    <td><input type="text" name="apellido" id="apellido" value=""></td>
+                </tr>
+                <tr>
+                    <td width="50%">Ingresa el correo electronico:</td>
+                    <td width="50%"><input type="text" name="email" id="email" value=""></td>
+                </tr>
+                <tr>
+                    <td width="50%">Ingresa una password: (*)</td>
+                    <td width="50%"><input type="password" name="clave1" id="clave1" value=""></td>
+                </tr>
+                <tr>
+                    <td width="50%">Repite la password: (*)</td>
+                    <td width="50%"><input type="password" name="clave2" id="clave2" value=""></td>
+                </tr>
+                <tr>
+                    <td width="50%" align="left" valign="top"><br>Seleccione sus hobbies: (*)</td>
+                    <td width="50%">
+                        <input type="checkbox" name="hobby" value="Programar">Programar&nbsp;
+                        <input type="checkbox" name="hobby" value="Deportes">Deportes<br>
+                        <input type="checkbox" name="hobby" value="Meditar">Meditar&nbsp;
+                        <input type="checkbox" name="hobby" value="Cine">Cine<br>
+                        <input type="checkbox" name="hobby" value="Leer">Leer&nbsp;
+                        <input type="checkbox" name="hobby" value="Videojuegos">Video Juegos<br>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="50%">Pais: (*)</td>
+                    <td width="50%">
+                        <select name="pais" id="pais">
+                            <option value="">--</option>
+                            <option value="Argentina">Argentina</option>
+                            <option value="Brasil">Brasil</option>
+                            <option value="Chile">Chile</option>
+                            <option value="Colombia">Colombia</option>
+                            <option value="Ecuador">Ecuador</option>
+                            <option value="Mexico">Mexico</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="50%">Sexo:</td>
+                    <td width="50%">
+                        <input type="radio" name="sexo" value="Masculino">Masculino
+                        <input type="radio" name="sexo" value="Femenino">Femenino
+                    </td>
+                </tr>
+                <tr>
+                    <td width="50%" align="center">
+                        <button onclick="docs()">Generar documento</button>
+                    </td>
+                    <td width="50%" align="center">
+                        <button type="reset" name="botonR">Cancelar</button>
+                    </td>
+                </tr>
+            </table>
+            <br>Los campos con asteriscos(*) son obligatorios.
+        </form>
+        <hr>
+    </div>
+
+    <script>
+        function Subir() {
+            var formulario = "";
+            var usuario = document.form1.usuario.value;
+            var nombre = document.form1.nombre.value;
+            var apellido = document.form1.apellido.value;
+            var email = document.form1.email.value;
+            var clave1 = document.form1.clave1.value;
+            var clave2 = document.form1.clave2.value;
+            var hobbies = "";
+            var b = document.form1.hobby.length;
+            for (a = 0; a < b; a++) {
+                if (document.form1.hobby[a].checked)
+                    hobbies += document.form1.hobby[a].value + ", ";
+            }
+            var pais = document.form1.pais.value;
+            var sexo = document.form1.sexo.value;
+            if (usuario == "" || nombre == "" || apellido == "" || pais == "") {
+                alert("Los campos con asterisco son obligatorios!!!");
+                return false;
+            }
+            if (hobbies.length == 0) {
+                alert("Debes seleccionar al menos un hobby!!");
+                return false;
+            }
+            if ((clave1 != clave2) || (clave1 == "")) {
+                alert("Las claves deben ser iguales y/o no pueden ser en blanco!!!");
+                return false;
+            }
+            if (email == "") { email.value = "No informado" };
+            if (sexo == "") { sexo.value = "No informado" };
+        }
+        function docs() {
+            var usuario = document.form1.usuario.value;
+            var nombre = document.form1.nombre.value;
+            var apellido = document.form1.apellido.value;
+            var email = document.form1.email.value;
+            var clave1 = document.form1.clave1.value;
+            var clave2 = document.form1.clave2.value;
+            var hobbies = "";
+            var b = document.form1.hobby.length;
+            for (a = 0; a < b; a++) {
+                if (document.form1.hobby[a].checked)
+                    hobbies += document.form1.hobby[a].value + ", ";
+            }
+            var pais = document.form1.pais.value;
+            var sexo = document.form1.sexo.value;
+
+            var logo = new Image();
+            logo.src = 'Logo.png';
+
+            const pdf = new jsPDF();
+            pdf.setFontSize(22);
+            pdf.text(70, 10, "Informacion de usuario");
+            pdf.setLineWidth(0.7);
+            pdf.setFontSize(14);
+
+            //lineas horizontales
+            pdf.line(4, 20, 206, 20);
+            pdf.line(4, 290, 206, 290);
+            //lineas verticales
+            pdf.line(4, 20, 4, 290);
+            pdf.line(206, 20, 206, 290);
+
+            pdf.text(6, 30, 'Usuario: ');
+            pdf.text(30, 30, usuario);
+            pdf.text(6, 40, 'Nombre: ');
+            pdf.text(30, 40, nombre);
+            pdf.text(6, 50, 'Apellido: ');
+            pdf.text(30, 50, apellido);
+            pdf.text(6, 60, 'email: ');
+            pdf.setTextColor(0, 0, 255);
+            pdf.text(30, 60, email);
+            pdf.setTextColor(0);
+            pdf.text(6, 70, 'Hobbies: ');
+            pdf.text(30, 70, hobbies);
+            pdf.text(6, 80, 'Pais: ');
+            pdf.text(30, 80, pais);
+            pdf.text(6, 90, 'Sexo: ');
+            pdf.text(30, 90, sexo);
+            pdf.setLineWidth(0.7);
+            /* pdf.addImage(logo, 15, 40, 140, 210); */
+            pdf.save(`Usuario info.pdf`);
+        }
+    </script>
+</body>
+
+</html>
